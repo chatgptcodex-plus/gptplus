@@ -1,0 +1,7 @@
+.preview/
+.cp*/
+.DS_Store
+.gh-token
+.gh-device
+.ghconfig/
+.bin/

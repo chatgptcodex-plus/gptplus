@@ -1,0 +1,714 @@
+{
+  "_readme": "这是全站唯一需要修改的内容文件。改完运行 python3 tools/build.py 重新生成页面。",
+
+  "site": {
+    "title": "AI会员代充值服务",
+    "brandName": "AI Pro Service",
+    "logoText": "AI",
+    "tagline": "专业 · 稳定 · 售后无忧",
+    "copyright": "© 2025 AI Pro Service. All Rights Reserved.",
+    "icp": "",
+    "baseUrl": "https://chatgptcodex-plus.github.io/gptplus/",
+    "_baseUrlHint": "发布后填成你的真实网址，例如 https://你的用户名.github.io/gptplus/ ；填好再跑一次 python3 tools/build.py，sitemap.xml 和 robots.txt 里的地址才正确。"
+  },
+
+  "contact": {
+    "wechatList": ["aicygg888", "aicygg789"],
+    "wechatHint": "如遇提示好友添加频繁，请扫描下方二维码",
+    "qrImage": "assets/img/wechat-qr.svg",
+    "qrCaption": "微信扫码添加客服",
+    "workTime": "工作时间：9:00 - 22:00",
+    "orderQueryText": "查询订单",
+    "orderQueryUrl": "",
+    "modalServices": ["ChatGPT Plus/Pro", "Claude Pro/Max", "Gemini Pro/Ultra", "Perplexity Pro", "SuperGrok", "X Premium+", "Codex 额度", "更多服务"]
+  },
+
+  "purchase": {
+    "defaultBuyUrl": "",
+    "_hint": "把 defaultBuyUrl 填成你的充值店铺链接（例如 https://your-shop.com/xxx ），全站套餐的「立即购买」都会跳转过去；单个套餐也可用自己的 buyUrl 覆盖。留空时点击购买会弹出客服微信。"
+  },
+
+  "noticeBar": {
+    "enabled": true,
+    "text": "如遇购买充值码或充值系统网址打不开，请先关闭梯子（代理/VPN）再试；本页所有价格与权益以店铺内实际下单页为准。",
+    "linkText": "联系客服",
+    "linkUrl": "#"
+  },
+
+  "nav": [
+    { "label": "首页", "href": "index.html", "icon": "home" },
+    { "label": "GPT", "href": "purchase-gpt.html", "icon": "sparkles" },
+    { "label": "Claude", "href": "purchase-claude.html", "icon": "c" },
+    { "label": "Gemini", "href": "purchase-gemini.html", "icon": "gem" },
+    { "label": "Perplexity", "href": "purchase-perplexity.html", "icon": "lightbulb" },
+    { "label": "Grok", "href": "purchase-grok.html", "icon": "rocket" },
+    { "label": "X Premium(+)", "href": "purchase-premium.html", "icon": "x" }
+  ],
+
+  "hero": {
+    "eyebrow": "AI 模型服务",
+    "title": "一站式 AI 会员代充值",
+    "subtitle": "为您提供快速、安全、便捷的 GPT Go/Plus/Pro/Codex、Claude Pro、Gemini Pro、SuperGrok 等主流 AI 会员升级与代充值服务。如需其它产品请添加客服微信咨询。",
+    "primaryCta": { "label": "查看全部服务", "href": "#services" },
+    "secondaryCta": { "label": "联系客服", "action": "customer-service" },
+    "stats": [
+      { "value": "6+", "label": "主流 AI 服务" },
+      { "value": "5-30", "label": "分钟到账" },
+      { "value": "9:00-22:00", "label": "在线客服" },
+      { "value": "售后无忧", "label": "不成功可退" }
+    ]
+  },
+
+  "home": {
+    "servicesTitle": "支持的 AI 服务",
+    "servicesSubtitle": "点击对应卡片查看套餐、价格与充值说明",
+    "services": [
+      { "name": "GPT", "icon": "sparkles", "href": "purchase-gpt.html", "desc": "体验最前沿的通用人工智能，解锁 GPT-5 / Codex 的强大能力。", "cta": "立即充值" },
+      { "name": "Claude", "icon": "c", "href": "purchase-claude.html", "desc": "Anthropic 出品的强大对话模型，擅长长文本处理和深度对话。", "cta": "立即充值" },
+      { "name": "Gemini", "icon": "gem", "href": "purchase-gemini.html", "desc": "Google 推出的新一代多模态大模型，原生支持文本、图片和视频。", "cta": "立即充值" },
+      { "name": "Perplexity Pro", "icon": "lightbulb", "href": "purchase-perplexity.html", "desc": "AI 搜索引擎，支持 GPT、Claude 等多种模型，提供深度研究与智能问答。", "cta": "立即充值" },
+      { "name": "Grok", "icon": "rocket", "href": "purchase-grok.html", "desc": "xAI 打造的 AI 模型，以实时信息获取和独特的幽默感为特色。", "cta": "立即充值" },
+      { "name": "X Premium(+)", "icon": "x", "href": "purchase-premium.html", "desc": "X 平台高级会员，蓝标认证、无广告体验、更高 Grok 额度与创作权益。", "cta": "立即充值" }
+    ],
+    "stepsTitle": "购买流程",
+    "steps": [
+      { "title": "选择服务", "desc": "在对应产品页挑选你需要的套餐档位。" },
+      { "title": "点击立即购买", "desc": "跳转到充值店铺，用微信或支付宝完成支付。" },
+      { "title": "获取充值码", "desc": "支付成功后页面会显示卡密/充值码，请截图保存。" },
+      { "title": "按说明充值", "desc": "按页面说明操作；如需代充，凭订单联系客服即可。" }
+    ],
+    "guaranteesTitle": "为什么选择我们",
+    "guarantees": [
+      { "icon": "bolt", "title": "快速到账", "desc": "正规官方通道，大多数订单一小时内完成，无需长时间等待。" },
+      { "icon": "shield", "title": "安全可靠", "desc": "代充仅需账号，无需密码，充值完成后可自行修改密码。" },
+      { "icon": "headset", "title": "全程售后", "desc": "专业客服在线答疑，充值失败或未到账可全额退款。" },
+      { "icon": "layers", "title": "品类齐全", "desc": "GPT、Claude、Gemini、Grok、Perplexity、X 会员一站购齐。" }
+    ],
+    "faqTitle": "常见问题",
+    "faq": [
+      { "q": "充值需要提供我的账号密码吗？", "a": "不需要。绝大多数产品只需您提供登录邮箱（或会员链接），我们通过官方通道为您升级，全程不需要密码。极少数成品号商品才会直接交付账密。" },
+      { "q": "下单后多久到账？", "a": "客服在线时间（9:00-22:00）内一般 5-30 分钟完成；高峰期或需要人工处理的订单最长不超过 24 小时，超时会为您全额退款。" },
+      { "q": "为什么页面上写着「请关闭梯子」？", "a": "部分充值店铺与卡密系统对代理网络不稳定，打开页面或支付时容易失败。关闭梯子后用本地网络即可正常访问。" },
+      { "q": "充值失败会退款吗？", "a": "会。若因渠道原因无法完成充值，我们会全额原路退款，不收取任何手续费。" },
+      { "q": "支持哪些付款方式？", "a": "充值店铺内一般支持微信支付与支付宝，具体以店铺结算页显示为准。" },
+      { "q": "没有账号可以买吗？", "a": "可以。部分产品提供「成品号」，交付账密可直接登录；也可以先按我们的图文教程自助注册账号，再回来购买充值服务。" }
+    ]
+  },
+
+  "products": [
+    {
+      "slug": "gpt",
+      "page": "purchase-gpt.html",
+      "navLabel": "GPT",
+      "title": "GPT Go / Plus / Pro / Codex 充值",
+      "metaTitle": "GPT 充值 - ChatGPT Plus / Pro / Codex 代充值",
+      "breadcrumb": "GPT 充值",
+      "subtitle": "OpenAI 官方通道代充值，个人 Plus 一键升级，不成功全额退款。需要代充 Pro(5x/20x) 或 Codex 额度请联系客服微信。",
+      "icon": "sparkles",
+      "guideUrl": "blog/chatgpt-register-guide.html",
+      "sections": [
+        {
+          "type": "notice",
+          "tone": "warn",
+          "title": "近期渠道说明",
+          "html": "<p>近期 iOS 礼品卡限购严重，全网大部分卡密自助充值渠道已暂停或不稳定。我们已额外投入设备和人力优化渠道，目前仍可保障正常充值；由于渠道成本上涨，近期价格会有所上调，后续供应恢复稳定后价格也会同步下调，请您放心。</p>"
+        },
+        {
+          "type": "options",
+          "title": "没有 ChatGPT 账号？",
+          "subtitle": "两种方式任选其一",
+          "items": [
+            { "icon": "cart", "title": "直接购买成品号", "desc": "GPT Free 成品号 ¥25/个，交付账密可直接登录。", "cta": "购买成品号", "href": "#plans" },
+            { "icon": "book", "title": "自行注册教程", "desc": "图文教程，在 chatgpt.com 免费自行注册。", "cta": "查看教程", "href": "blog/chatgpt-register-guide.html" }
+          ]
+        },
+        {
+          "type": "plans",
+          "id": "plans",
+          "title": "选择套餐",
+          "items": [
+            {
+              "name": "ChatGPT Free 账号",
+              "subtitle": "独立账号 · 成品号",
+              "price": "25",
+              "unit": "/ 个",
+              "tags": ["独立账号", "可直接登录", "Codex 验证自理"],
+              "desc": "独立 GPT Free 账号，交付账号密码，可直接登录 ChatGPT 官网使用。",
+              "features": [
+                "独立 GPT Free 账号，交付账号密码",
+                "可直接登录 ChatGPT 官网使用",
+                "适合体验 GPT 或作为备用账号",
+                "Codex 手机号验证需自行解决，购买前请确认能接受"
+              ],
+              "cta": "立即购买"
+            },
+            {
+              "name": "ChatGPT Go 会员",
+              "subtitle": "轻度使用 · 官方权益为准",
+              "badges": ["限时特惠"],
+              "price": "89",
+              "originalPrice": "99",
+              "unit": "/ 月",
+              "tags": ["轻度使用", "更多消息和上传", "不支持 Codex"],
+              "desc": "适合日常轻度使用用户；Go 会员不支持 Codex，一切权益以 ChatGPT 官方实际开通为准。",
+              "features": [
+                "相比免费版提供更多消息和文件上传限额",
+                "更多图片生成限额，适合日常创作和轻办公",
+                "更多记忆内容，适合低频但稳定的个人使用",
+                "不包含 Codex 权益；需要 Codex 请优先选择 Plus、Pro 或成品号"
+              ],
+              "cta": "立即购买"
+            },
+            {
+              "name": "ChatGPT Plus",
+              "subtitle": "个人 Plus",
+              "featured": true,
+              "badges": ["推荐", "限时特惠", "立减20元"],
+              "price": "179",
+              "originalPrice": "189",
+              "unit": "/ 月",
+              "save": { "amount": "节省10元", "percent": "约5.3% OFF" },
+              "desc": "正规官方通道充值，个人版 Plus 一键升级，不成功全额退款。",
+              "tags": ["给你充值", "无需账密"],
+              "features": [
+                "访问 GPT-5 / o1 等最新模型能力",
+                "支持 Codex 代码理解与生成、GPT Image 图像生成",
+                "Canvas、Projects、GPTs、Memory 等高级能力",
+                "充值 / 成品账号两种方案可选"
+              ],
+              "options": [
+                { "label": "充值（给您的账号）", "desc": "点击立即购买查看充值详情，为您的账号升级", "action": "buy" },
+                { "label": "成品账号（无需自备账号）", "desc": "联系客服获取已开好的 Plus 成品号", "action": "wechat" }
+              ],
+              "cta": "立即购买"
+            },
+            {
+              "name": "ChatGPT Pro 5x",
+              "subtitle": "高级版 · 5 倍容量",
+              "badges": ["限时特惠", "立减70元"],
+              "price": "820",
+              "originalPrice": "900",
+              "unit": "/ 月",
+              "save": { "amount": "节省70元", "percent": "约7.8% OFF" },
+              "desc": "ChatGPT Pro 专业版，5 倍于 Plus 的使用限额，适合重度用户和团队使用。",
+              "tags": ["5倍容量", "更高限额", "优先响应"],
+              "features": [
+                "5 倍使用限额：相比 Plus 获得更多消息和调用次数",
+                "包含 Plus 全部功能：GPT-5、o1、Codex、Image、Canvas 等",
+                "优先响应速度，适合商业团队和开发者使用",
+                "适合需要大量调用或高频使用的专业场景"
+              ],
+              "cta": "立即购买"
+            },
+            {
+              "name": "ChatGPT Pro 20x",
+              "subtitle": "旗舰版 · 20 倍容量",
+              "badges": ["限时特惠", "立减100元"],
+              "price": "1520",
+              "originalPrice": "1620",
+              "unit": "/ 月",
+              "save": { "amount": "节省100元", "percent": "约6.2% OFF" },
+              "desc": "ChatGPT Pro 旗舰版，20 倍于 Plus 的使用限额，为企业级用户提供极致体验。",
+              "tags": ["20倍容量", "企业级", "极致性能"],
+              "features": [
+                "20 倍使用限额：几乎无限制的使用体验",
+                "包含 Pro 5x 全部功能，享受最高级别服务",
+                "极速响应，最适合企业级应用和高频调用",
+                "适合大规模部署、AI 集成和商业开发项目"
+              ],
+              "cta": "立即购买"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "title": "ChatGPT 产品等级对比",
+          "head": ["产品等级", "使用限额", "价格", "适合用户"],
+          "rows": [
+            ["ChatGPT Plus", "标准限额", "¥179 / 月", "个人用户，日常使用"],
+            ["ChatGPT Pro 5x", "5 倍限额", "¥820 / 月", "重度用户、小团队、开发者"],
+            ["ChatGPT Pro 20x", "20 倍限额", "¥1520 / 月", "企业级用户、大规模部署"]
+          ]
+        },
+        {
+          "type": "rich",
+          "title": "5x 和 20x 的含义说明",
+          "html": "<ul><li><strong>倍数含义</strong>：5x 和 20x 指的是相对于 ChatGPT Plus 标准版的使用限额倍数。</li><li><strong>与 Plus 的区别</strong>：Plus 是标准个人版，Pro 5x/20x 是专业版，提供更高的使用限额和优先响应。</li><li><strong>适用场景</strong>：Pro 5x 适合需要频繁使用的专业用户和团队；Pro 20x 适合企业级应用和大规模集成。</li><li><strong>功能权益</strong>：所有等级都包含 GPT-5、o1、Codex 等核心功能，主要区别在于使用限额。</li></ul>"
+        },
+        {
+          "type": "rich",
+          "title": "重要说明",
+          "html": "<ul><li>新窗口打开的充值网站可以正常登录和支付，无任何限制。</li><li>页面打不开时请先关闭梯子（代理/VPN）再重试。</li><li>充值前请确认账号地区与所需版本一致，避免下单后无法开通。</li><li>如提示添加好友频繁，请直接扫码添加客服。</li></ul>"
+        }
+      ]
+    },
+
+    {
+      "slug": "claude",
+      "page": "purchase-claude.html",
+      "navLabel": "Claude",
+      "title": "Claude Pro / Max 充值",
+      "metaTitle": "Claude 充值 - Claude Pro / Max 代充值",
+      "breadcrumb": "Claude 充值",
+      "subtitle": "Anthropic 官方通道代充值，长文本与深度推理首选。支持个人 Pro 与 Max 5x / 20x 档位，不成功全额退款。",
+      "icon": "c",
+      "sections": [
+        {
+          "type": "notice",
+          "tone": "info",
+          "title": "下单前请确认",
+          "html": "<p>Claude 账号地区与支付方式会影响开通结果，下单前请先把账号邮箱发给客服确认可充值，再完成付款。</p>"
+        },
+        {
+          "type": "plans",
+          "id": "plans",
+          "title": "选择套餐",
+          "items": [
+            {
+              "name": "Claude Pro",
+              "subtitle": "个人版 · 标准额度",
+              "featured": true,
+              "badges": ["推荐", "限时特惠"],
+              "price": "168",
+              "originalPrice": "180",
+              "unit": "/ 月",
+              "save": { "amount": "节省12元", "percent": "约6.7% OFF" },
+              "desc": "个人 Claude Pro 会员，解锁 Opus / Sonnet 全系模型与 Projects、Artifacts 等能力。",
+              "tags": ["无需账密", "给你充值", "全系模型"],
+              "features": [
+                "解锁 Claude 全系主力模型，包含 Opus 档位",
+                "5 倍于免费版的使用额度，高峰期优先访问",
+                "支持 Projects、Artifacts、文件上传与长上下文",
+                "仅需提供账号邮箱，无需密码"
+              ],
+              "cta": "立即购买"
+            },
+            {
+              "name": "Claude Max 5x",
+              "subtitle": "重度使用 · 5 倍额度",
+              "badges": ["限时特惠"],
+              "price": "760",
+              "originalPrice": "830",
+              "unit": "/ 月",
+              "desc": "适合重度使用 Claude 的个人用户与小型团队，额度显著高于 Pro。",
+              "tags": ["5倍额度", "优先访问", "适合开发者"],
+              "features": [
+                "5 倍于 Pro 的使用额度",
+                "高峰期优先访问，减少排队等待",
+                "适合长时间编码、写作与长文档处理",
+                "包含 Pro 全部功能"
+              ],
+              "cta": "立即购买"
+            },
+            {
+              "name": "Claude Max 20x",
+              "subtitle": "旗舰版 · 20 倍额度",
+              "badges": ["限时特惠"],
+              "price": "1500",
+              "originalPrice": "1620",
+              "unit": "/ 月",
+              "desc": "Claude 最高档位，20 倍额度，适合企业级与高频 Agent 工作流。",
+              "tags": ["20倍额度", "企业级", "几乎无限制"],
+              "features": [
+                "20 倍于 Pro 的使用额度",
+                "最适合 Claude Code 高频调用与大规模 Agent 场景",
+                "最高优先级访问",
+                "包含 Max 5x 全部权益"
+              ],
+              "cta": "立即购买"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Claude 档位对比",
+          "head": ["档位", "使用额度", "价格", "适合用户"],
+          "rows": [
+            ["Claude Pro", "标准额度", "¥168 / 月", "个人日常使用"],
+            ["Claude Max 5x", "5 倍额度", "¥760 / 月", "重度用户、开发者"],
+            ["Claude Max 20x", "20 倍额度", "¥1500 / 月", "企业级、高频工作流"]
+          ]
+        },
+        {
+          "type": "rich",
+          "title": "重要说明",
+          "html": "<ul><li>充值前请先与客服确认账号状态，部分新注册账号存在风控限制。</li><li>页面打不开时请先关闭梯子（代理/VPN）再重试。</li><li>本服务为代充值，权益以 Anthropic 官方实际开通为准。</li></ul>"
+        }
+      ]
+    },
+
+    {
+      "slug": "gemini",
+      "page": "purchase-gemini.html",
+      "navLabel": "Gemini",
+      "title": "Gemini / Google AI Pro 充值",
+      "metaTitle": "Gemini 充值 - Google AI Pro / Ultra 代充值",
+      "breadcrumb": "Gemini 充值",
+      "subtitle": "Google 官方 AI 会员代充值，原生多模态，支持文本、图片与视频。含 Gemini App、NotebookLM 与 2TB 云盘权益。",
+      "icon": "gem",
+      "sections": [
+        {
+          "type": "notice",
+          "tone": "info",
+          "title": "开通前须知",
+          "html": "<p>Google AI 会员需使用符合条件的 Google 账号开通，请先把账号邮箱发给客服确认，再完成付款。</p>"
+        },
+        {
+          "type": "plans",
+          "id": "plans",
+          "title": "选择套餐",
+          "items": [
+            {
+              "name": "Google AI Pro（Gemini Pro）",
+              "subtitle": "个人版 · 月付",
+              "featured": true,
+              "badges": ["推荐", "限时特惠"],
+              "price": "155",
+              "originalPrice": "170",
+              "unit": "/ 月",
+              "desc": "解锁 Gemini 最强模型与更高额度，附赠 NotebookLM Plus 与 2TB Google One 存储。",
+              "tags": ["更强模型", "更高额度", "含2TB存储"],
+              "features": [
+                "解锁 Gemini 高阶模型与更高使用额度",
+                "Gemini App 中支持更长上下文与文件上传",
+                "包含 NotebookLM Plus 与 2TB Google One 空间",
+                "支持在 Gmail、Docs 等 Google 应用中调用 Gemini"
+              ],
+              "cta": "立即购买"
+            },
+            {
+              "name": "Google AI Pro 年付",
+              "subtitle": "个人版 · 年付更划算",
+              "badges": ["省更多"],
+              "price": "1480",
+              "originalPrice": "1860",
+              "unit": "/ 年",
+              "save": { "amount": "省 380 元", "percent": "约20% OFF" },
+              "desc": "一次性开通 12 个月，折合每月更低，适合长期稳定使用。",
+              "tags": ["一次开通一年", "折合更便宜", "权益同月付"],
+              "features": [
+                "12 个月 AI Pro 权益，折合每月约 123 元",
+                "权益与月付版本完全一致",
+                "适合确定长期使用的用户",
+                "到期可续费，不影响已开通权益"
+              ],
+              "cta": "立即购买"
+            },
+            {
+              "name": "Google AI Ultra",
+              "subtitle": "旗舰版 · 最高额度",
+              "badges": ["旗舰"],
+              "price": "1580",
+              "unit": "/ 月",
+              "desc": "Google 最高档 AI 会员，包含 Veo 视频生成等前沿能力与最高额度。",
+              "tags": ["最高额度", "含Veo", "30TB存储"],
+              "features": [
+                "最高使用额度与最早的新功能体验资格",
+                "包含 Veo 视频生成等前沿能力额度",
+                "30TB Google One 存储空间",
+                "包含 AI Pro 全部权益"
+              ],
+              "cta": "立即购买"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Google AI 会员对比",
+          "head": ["档位", "核心权益", "价格", "适合用户"],
+          "rows": [
+            ["Google AI Pro（月付）", "高阶模型 + 2TB 存储", "¥155 / 月", "个人日常使用"],
+            ["Google AI Pro（年付）", "同月付，折合更低", "¥1480 / 年", "确定长期使用"],
+            ["Google AI Ultra", "最高额度 + Veo + 30TB", "¥1580 / 月", "专业创作者、团队"]
+          ]
+        },
+        {
+          "type": "rich",
+          "title": "重要说明",
+          "html": "<ul><li>会员权益以 Google 官方实际开通为准，不同地区账号可用功能可能存在差异。</li><li>请勿在充值过程中修改账号密码或地区信息。</li><li>页面打不开时请先关闭梯子（代理/VPN）再重试。</li></ul>"
+        }
+      ]
+    },
+
+    {
+      "slug": "perplexity",
+      "page": "purchase-perplexity.html",
+      "navLabel": "Perplexity",
+      "title": "Perplexity Pro 充值",
+      "metaTitle": "Perplexity 充值 - Perplexity Pro 代充值",
+      "breadcrumb": "Perplexity 充值",
+      "subtitle": "AI 搜索引擎会员代充值，支持 GPT、Claude 等多种模型切换，提供深度研究与智能问答。",
+      "icon": "lightbulb",
+      "sections": [
+        {
+          "type": "plans",
+          "id": "plans",
+          "title": "选择套餐",
+          "items": [
+            {
+              "name": "Perplexity Pro · 1 个月",
+              "subtitle": "体验档",
+              "price": "98",
+              "originalPrice": "110",
+              "unit": "/ 月",
+              "desc": "先体验一个月，解锁 Pro 搜索、模型切换与无限次深度研究。",
+              "tags": ["按月灵活", "模型可切换", "无需账密"],
+              "features": [
+                "每天更多次 Pro 搜索与深度研究",
+                "可在 GPT、Claude、Sonar 等模型间切换",
+                "支持文件上传与联网问答",
+                "仅需提供账号邮箱"
+              ],
+              "cta": "立即购买"
+            },
+            {
+              "name": "Perplexity Pro · 1 年",
+              "subtitle": "长期档 · 最划算",
+              "featured": true,
+              "badges": ["推荐", "省更多"],
+              "price": "268",
+              "originalPrice": "1188",
+              "unit": "/ 年",
+              "save": { "amount": "省 920 元", "percent": "约77% OFF" },
+              "desc": "一年期 Pro 会员，折合每月仅约 22 元，长期使用首选。",
+              "tags": ["一次开通一年", "折合每月22元", "权益同月付"],
+              "features": [
+                "12 个月 Perplexity Pro 完整权益",
+                "折合每月约 22 元，比月付省 77%",
+                "支持模型切换、深度研究与文件问答",
+                "到期可续费，不影响已开通权益"
+              ],
+              "cta": "立即购买"
+            },
+            {
+              "name": "Perplexity Pro 成品号",
+              "subtitle": "独立账号 · 即买即用",
+              "price": "328",
+              "unit": "/ 个",
+              "desc": "已开通 Pro 的独立账号，交付账密可直接登录，无需自备账号。",
+              "tags": ["独立账号", "交付账密", "即买即用"],
+              "features": [
+                "已开通 Pro 权益的独立账号",
+                "交付账号密码，登录即可使用",
+                "适合没有账号或不想用自己邮箱的用户",
+                "首次登录请及时修改密码"
+              ],
+              "cta": "立即购买"
+            }
+          ]
+        },
+        {
+          "type": "rich",
+          "title": "Perplexity Pro 能做什么",
+          "html": "<ul><li><strong>深度研究</strong>：自动检索多个来源并生成带引用的研究报告。</li><li><strong>模型切换</strong>：在同一次对话中选择 GPT、Claude 等不同模型。</li><li><strong>文件问答</strong>：上传 PDF、文档让 AI 直接阅读并回答问题。</li><li><strong>实时联网</strong>：答案附带来源链接，方便核对事实。</li></ul>"
+        },
+        {
+          "type": "rich",
+          "title": "重要说明",
+          "html": "<ul><li>年付商品一旦开通不支持中途退款，请确认后再下单。</li><li>页面打不开时请先关闭梯子（代理/VPN）再重试。</li><li>权益以 Perplexity 官方实际开通为准。</li></ul>"
+        }
+      ]
+    },
+
+    {
+      "slug": "grok",
+      "page": "purchase-grok.html",
+      "navLabel": "Grok",
+      "title": "SuperGrok 充值",
+      "metaTitle": "Grok 充值 - SuperGrok / SuperGrok Heavy 代充值",
+      "breadcrumb": "Grok 充值",
+      "subtitle": "xAI 打造的 AI 模型会员代充值，实时信息获取、图像与视频生成，独特幽默风格。",
+      "icon": "rocket",
+      "sections": [
+        {
+          "type": "plans",
+          "id": "plans",
+          "title": "选择套餐",
+          "items": [
+            {
+              "name": "SuperGrok",
+              "subtitle": "个人版 · 月付",
+              "featured": true,
+              "badges": ["推荐", "限时特惠"],
+              "price": "168",
+              "originalPrice": "185",
+              "unit": "/ 月",
+              "desc": "解锁 Grok 高阶模型、更高额度与图像/视频生成能力。",
+              "tags": ["更高额度", "图像生成", "实时信息"],
+              "features": [
+                "使用 Grok 高阶模型，额度显著高于免费版",
+                "支持图像生成与视频生成额度",
+                "实时联网获取最新信息",
+                "仅需提供账号邮箱，无需密码"
+              ],
+              "cta": "立即购买"
+            },
+            {
+              "name": "SuperGrok Heavy",
+              "subtitle": "旗舰版 · 最高额度",
+              "badges": ["旗舰"],
+              "price": "2280",
+              "unit": "/ 月",
+              "desc": "Grok 最高档位，面向需要最强推理与最大额度的专业用户。",
+              "tags": ["最强推理", "最高额度", "优先体验"],
+              "features": [
+                "优先体验 xAI 最新模型与功能",
+                "最高使用额度，适合长任务与高频调用",
+                "包含 SuperGrok 全部权益",
+                "适合企业级与研究场景"
+              ],
+              "cta": "立即购买"
+            },
+            {
+              "name": "SuperGrok 成品号",
+              "subtitle": "独立账号 · 即买即用",
+              "price": "368",
+              "unit": "/ 个",
+              "desc": "已开通 SuperGrok 的独立账号，交付账密即可使用。",
+              "tags": ["独立账号", "交付账密", "无需自备账号"],
+              "features": [
+                "已开通 SuperGrok 权益的独立账号",
+                "交付账号密码，登录即可使用",
+                "适合没有 X 账号的用户",
+                "首次登录请及时修改密码"
+              ],
+              "cta": "立即购买"
+            }
+          ]
+        },
+        {
+          "type": "rich",
+          "title": "SuperGrok 与 X Premium+ 的关系",
+          "html": "<ul><li><strong>SuperGrok</strong>：xAI 官方 AI 会员，专注 Grok 模型额度与生成能力，可在 Grok 官网/App 使用。</li><li><strong>X Premium+</strong>：X 平台会员，包含蓝标认证、无广告与更高的 Grok 额度。</li><li>两者可分别购买，也可同时开通；如需在 X 内使用更多 Grok 额度，建议选择 X Premium+。</li></ul>"
+        },
+        {
+          "type": "rich",
+          "title": "重要说明",
+          "html": "<ul><li>Grok 部分能力需要 X 账号登录，下单前请确认账号状态正常。</li><li>页面打不开时请先关闭梯子（代理/VPN）再重试。</li><li>权益以 xAI 官方实际开通为准。</li></ul>"
+        }
+      ]
+    },
+
+    {
+      "slug": "premium",
+      "page": "purchase-premium.html",
+      "navLabel": "X Premium(+)",
+      "title": "X Premium(+) 充值",
+      "metaTitle": "X Premium 充值 - X Premium / Premium+ 蓝标会员代充值",
+      "breadcrumb": "X Premium(+) 充值",
+      "subtitle": "X 平台高级会员代充值，蓝标认证、无广告体验、更高 Grok 额度与创作者分成权益。",
+      "icon": "x",
+      "sections": [
+        {
+          "type": "plans",
+          "id": "plans",
+          "title": "选择套餐",
+          "items": [
+            {
+              "name": "X Premium",
+              "subtitle": "基础会员 · 蓝标",
+              "badges": ["限时特惠"],
+              "price": "118",
+              "originalPrice": "130",
+              "unit": "/ 月",
+              "desc": "获得蓝标认证、编辑推文、更长内容与更高曝光权重。",
+              "tags": ["蓝标认证", "编辑推文", "更高曝光"],
+              "features": [
+                "账号获得蓝标认证标识",
+                "可编辑已发布推文、发布更长内容",
+                "回复与搜索中获得更高排序权重",
+                "降低广告展示频率"
+              ],
+              "cta": "立即购买"
+            },
+            {
+              "name": "X Premium+",
+              "subtitle": "高级会员 · 最高 Grok 额度",
+              "featured": true,
+              "badges": ["推荐", "含Grok额度"],
+              "price": "238",
+              "originalPrice": "260",
+              "unit": "/ 月",
+              "desc": "X 平台最高档会员，完全无广告，并包含最高的 Grok 使用额度。",
+              "tags": ["完全无广告", "最高Grok额度", "创作者分成"],
+              "features": [
+                "完全去除广告展示",
+                "包含最高的 Grok 使用额度",
+                "可参与创作者广告分成计划",
+                "包含 X Premium 全部权益"
+              ],
+              "cta": "立即购买"
+            },
+            {
+              "name": "X Premium+ 年付",
+              "subtitle": "高级会员 · 年付更省",
+              "badges": ["省更多"],
+              "price": "2380",
+              "originalPrice": "2856",
+              "unit": "/ 年",
+              "save": { "amount": "省 476 元", "percent": "约17% OFF" },
+              "desc": "一次性开通 12 个月 Premium+，折合每月更低。",
+              "tags": ["一次开通一年", "折合每月198元", "权益同月付"],
+              "features": [
+                "12 个月 X Premium+ 完整权益",
+                "折合每月约 198 元",
+                "适合长期运营账号的用户",
+                "到期可续费"
+              ],
+              "cta": "立即购买"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "title": "X 会员对比",
+          "head": ["档位", "蓝标", "广告", "Grok 额度", "价格"],
+          "rows": [
+            ["免费账号", "无", "有", "基础额度", "免费"],
+            ["X Premium", "有", "减少", "更高额度", "¥118 / 月"],
+            ["X Premium+", "有", "完全无广告", "最高额度", "¥238 / 月"]
+          ]
+        },
+        {
+          "type": "rich",
+          "title": "重要说明",
+          "html": "<ul><li>开通前请确保账号满足 X 官方的订阅条件（如账号状态正常、未被限制）。</li><li>蓝标认证由 X 官方授予，代充值仅负责开通会员权益。</li><li>页面打不开时请先关闭梯子（代理/VPN）再重试。</li></ul>"
+        }
+      ]
+    }
+  ],
+
+  "blog": [
+    {
+      "slug": "chatgpt-register-guide",
+      "page": "blog/chatgpt-register-guide.html",
+      "title": "ChatGPT 免费注册图文教程",
+      "metaTitle": "ChatGPT 注册教程 - 免费注册 ChatGPT 账号",
+      "subtitle": "手把手教你用邮箱在 chatgpt.com 免费注册一个属于自己的 ChatGPT 账号，注册完成后再回来购买充值服务即可。",
+      "sections": [
+        {
+          "type": "steps",
+          "title": "注册步骤",
+          "items": [
+            { "title": "准备邮箱", "desc": "准备一个可以正常收信的邮箱（Gmail、Outlook、QQ 邮箱均可），建议使用国际邮箱，成功率更高。" },
+            { "title": "打开注册页", "desc": "浏览器访问 chatgpt.com，点击右上角「Sign up」，输入邮箱地址并设置密码。" },
+            { "title": "查收验证邮件", "desc": "到邮箱收件箱（含垃圾箱）查找验证邮件，点击其中的验证链接完成邮箱验证。" },
+            { "title": "填写姓名与生日", "desc": "按提示填写姓名和出生日期，完成后即可进入 ChatGPT 对话界面。" },
+            { "title": "手机号验证（如需）", "desc": "部分网络环境会要求手机号验证。若无法通过，可联系客服协助，或直接购买成品号。" },
+            { "title": "登录并检查", "desc": "退出后重新登录，确认账号可以正常使用，然后回到本站购买 Plus 等充值服务。" }
+          ]
+        },
+        {
+          "type": "rich",
+          "title": "常见问题",
+          "html": "<ul><li><strong>注册时提示地区不支持？</strong>请检查网络环境，或换一个邮箱重新尝试。</li><li><strong>收不到验证邮件？</strong>先检查垃圾邮件箱；QQ 邮箱有时会延迟，可等待 5 分钟或换邮箱。</li><li><strong>手机号验证过不去？</strong>可以联系客服协助，或直接购买我们的成品号，交付账密即可登录。</li><li><strong>注册后就能用 Plus 功能吗？</strong>不能。免费账号需要购买 Plus/Pro 等会员才能解锁对应权益。</li></ul>"
+        },
+        {
+          "type": "rich",
+          "title": "下一步",
+          "html": "<p>账号注册完成后，回到 <a href=\"../purchase-gpt.html\">GPT 充值页</a> 选择合适的套餐，或直接联系客服微信协助下单。</p>"
+        }
+      ]
+    }
+  ]
+}

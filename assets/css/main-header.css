@@ -1,0 +1,202 @@
+/* main-header.css — 全站统一导航栏样式 */
+
+:root {
+  --header-height: 76px;
+  --notice-bar-height: 0px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans", sans-serif;
+  background-color: var(--bg, #f8f9fa);
+  color: var(--text, #333);
+  padding-top: calc(var(--header-height) + var(--notice-bar-height));
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- 顶部公告条 ---------- */
+/* 注意：这里不能用 height: var(--notice-bar-height)。
+   公告条高度是由 JS 测量自身得到的，若再用该变量设高度会变成 0/1px 的死循环。 */
+.notice-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #fef3c7, #fde68a);
+  color: #78350f;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #fcd34d;
+}
+
+.notice-bar[hidden] { display: none; }
+
+.notice-bar .notice-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 44px 8px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.notice-bar svg { flex-shrink: 0; }
+
+.notice-bar .notice-link {
+  color: #92400e;
+  font-weight: 700;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.notice-bar .notice-close {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #78350f;
+}
+
+.notice-bar .notice-close:hover { background: #fff; }
+
+/* ---------- 主导航 ---------- */
+.main-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e9ecef;
+  position: fixed;
+  top: var(--notice-bar-height, 0px);
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  z-index: 1000;
+  transition: box-shadow 0.3s ease, top 0.2s ease;
+}
+
+.main-header.scrolled { box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08); }
+
+.main-header .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.main-header a { text-decoration: none; }
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+}
+
+.logo-container { display: flex; align-items: center; flex-shrink: 0; padding: 8px 10px; border-radius: 10px; transition: background 0.25s ease; }
+.logo-container:hover { background-color: rgba(111, 66, 193, 0.08); }
+
+.logo {
+  display: flex; align-items: center; justify-content: center;
+  width: 42px; height: 42px;
+  background: linear-gradient(135deg, #6f42c1, #9d5cf5);
+  color: #fff; font-size: 20px; font-weight: 700;
+  border-radius: 10px; margin-right: 12px;
+  box-shadow: 0 6px 14px rgba(111, 66, 193, 0.28);
+}
+
+.logo-text h1 { margin: 0; font-size: 20px; color: #343a40; font-weight: 700; letter-spacing: -0.2px; }
+.logo-text .subtitle { font-size: 12px; color: #868e96; }
+
+.desktop-nav { display: flex; align-items: center; justify-content: center; flex-grow: 1; }
+
+.main-nav ul {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; align-items: center; flex-wrap: wrap; justify-content: center; gap: 2px;
+}
+
+.main-nav ul li a {
+  color: #495057; font-size: 15px;
+  display: flex; align-items: center; gap: 7px;
+  padding: 9px 11px; white-space: nowrap;
+  transition: color 0.2s ease, background 0.2s ease;
+  border-radius: 8px; font-weight: 500;
+}
+
+.main-nav ul li a:hover { color: #6f42c1; background-color: rgba(111, 66, 193, 0.09); }
+.main-nav ul li a svg { color: #adb5bd; transition: color 0.2s ease; }
+.main-nav ul li a:hover svg { color: #6f42c1; }
+
+.main-nav ul li a.nav-active { color: #6f42c1; background-color: rgba(111, 66, 193, 0.12); font-weight: 600; }
+.main-nav ul li a.nav-active svg { color: #6f42c1; }
+
+/* 更多服务下拉 */
+.nav-more-item { position: relative; }
+.nav-more-item > a { cursor: pointer; }
+/* 必须写成 .main-nav ul.nav-more-list 提高优先级，否则会被上面的 .main-nav ul 规则覆盖成 flex */
+.main-nav ul.nav-more-list {
+  display: none; position: absolute; top: 100%; right: 0;
+  background: #fff; list-style: none; padding: 10px 8px; margin: 0;
+  min-width: 210px; border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.14);
+  border: 1px solid #f1f3f5; z-index: 30;
+}
+.nav-more-item:hover .nav-more-list,
+.nav-more-item:focus-within .nav-more-list { display: block; }
+.main-nav ul.nav-more-list li a { display: block; padding: 9px 12px; font-size: 14px; border-radius: 8px; color: #495057; }
+.main-nav ul.nav-more-list li a:hover { background: rgba(111, 66, 193, 0.08); color: #6f42c1; }
+
+/* 用户操作区 */
+.user-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; margin-left: 12px; }
+
+.query-btn {
+  background-color: #fff; color: #495057;
+  border: 1px solid #dee2e6; padding: 8px 15px;
+  border-radius: 999px; cursor: pointer; font-size: 14px;
+  white-space: nowrap; transition: all 0.25s ease;
+  display: flex; align-items: center; gap: 6px; font-family: inherit;
+}
+.query-btn:hover { background-color: #f8f9fa; border-color: #adb5bd; color: #6f42c1; }
+
+.mobile-nav-toggle {
+  display: none; background: none; border: none;
+  color: #343a40; cursor: pointer; padding: 8px; border-radius: 8px;
+}
+.mobile-nav-toggle:hover { background: #f1f3f5; }
+
+.mobile-nav-menu {
+  display: none; position: fixed;
+  top: calc(var(--header-height) + var(--notice-bar-height));
+  left: 0; width: 100%;
+  background-color: #fff; flex-direction: column;
+  padding: 10px 0 20px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  z-index: 999; max-height: calc(100vh - var(--header-height)); overflow-y: auto;
+}
+.mobile-nav-menu.active { display: flex; }
+.mobile-nav-menu ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; width: 100%; }
+.mobile-nav-menu a { color: #495057; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 0; font-size: 16px; }
+.mobile-nav-menu a.nav-active { color: #6f42c1; background: rgba(111, 66, 193, 0.07); font-weight: 600; }
+.mobile-nav-menu .user-actions-mobile {
+  border-top: 1px solid #f1f3f5; margin-top: 12px; padding-top: 16px;
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+}
+
+@media (max-width: 1080px) {
+  .desktop-nav { display: none; }
+  .mobile-nav-toggle { display: block; }
+}
+
+@media (max-width: 520px) {
+  :root { --header-height: 64px; }
+  .logo { width: 36px; height: 36px; font-size: 17px; margin-right: 10px; }
+  .logo-text h1 { font-size: 17px; }
+  .logo-text .subtitle { display: none; }
+  .notice-bar .notice-inner { font-size: 12.5px; padding-right: 40px; }
+}

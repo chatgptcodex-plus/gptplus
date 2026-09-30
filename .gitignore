@@ -1,6 +1,7 @@
 .preview/
 .cp*/
 .DS_Store
+.vscode/
 .gh-token
 .gh-device
 .ghconfig/

@@ -97,6 +97,20 @@ python3 -m http.server 8080
 # 浏览器打开 http://127.0.0.1:8080
 ```
 
+### 4. 以后怎么更新（已上线：https://chatgptcodex-plus.github.io/gptplus/）
+
+改完 `data/site.json` 后，跑这一条就行（凭据已配置好，不会再问密码）：
+
+```bash
+python3 tools/build.py && git add -A && git commit -m "更新价格" && git push
+```
+
+推送后 GitHub 会自动重新发布，约 1 分钟生效。注意：
+
+- **只改 `data/site.json` 就够了**，`index.html`、`purchase-*.html`、`blog/*.html` 都是生成物，手改会被下次生成覆盖。
+- `.gh-token`（授权令牌）和 `.git/config` 都已在 `.gitignore` / 版本控制之外，**不会**被推到公开仓库。
+- 不想保留授权了，去 https://github.com/settings/applications 撤销 "GitHub CLI"，再删掉本地 `.gh-token` 即可。
+
 ## 交互与细节（都是自动的，不用配）
 
 - 顶部固定导航 + 移动端汉堡菜单，`更多服务` 下拉列出全部页面

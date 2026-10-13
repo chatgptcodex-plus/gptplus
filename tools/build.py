@@ -270,6 +270,7 @@ def make_english_config(base_cfg, en_copy):
 
 def validate_english_copy(en_copy):
     allowed_cjk_values = {("ui", "languageSwitch")}
+    brand_name = en_copy.get("site", {}).get("brandName", "")
 
     def walk(value, path=()):
         if isinstance(value, dict):
@@ -278,7 +279,7 @@ def validate_english_copy(en_copy):
         elif isinstance(value, list):
             for index, child in enumerate(value):
                 walk(child, path + (str(index),))
-        elif isinstance(value, str) and contains_cjk(value) and path not in allowed_cjk_values:
+        elif isinstance(value, str) and contains_cjk(value.replace(brand_name, "")) and path not in allowed_cjk_values:
             raise ValueError("English copy still contains Chinese at %s: %s" % (".".join(path), value[:80]))
 
     walk(en_copy)
@@ -355,6 +356,7 @@ def head(cfg, page_title, logical_page, locale, public_pages, description=""):
 def header(cfg, logical_page, locale, public_pages):
     site = cfg["site"]
     depth = logical_page.count("/")
+    brand_mark = "../" * (depth + (1 if locale == "en" else 0)) + "assets/img/brand-mark.svg"
     ui = cfg.get("ui", {})
     current_home = relative_page_link(logical_page, "index.html", locale)
     nav_items = []
@@ -423,7 +425,7 @@ def header(cfg, logical_page, locale, public_pages):
     return f"""<header class="main-header">
   <div class="container header-container">
     <a href="{e(current_home)}" class="logo-container" aria-label="{e(site['brandName'])} {e(ui.get('homeLabel', '首页'))}">
-      <div class="logo">{e(site['logoText'])}</div>
+      <img class="brand-mark" src="{e(brand_mark)}" alt="" width="42" height="42">
       <div class="logo-text">
         <h1>{e(site['brandName'])}</h1>
         <div class="subtitle">{e(site.get('tagline', ''))}</div>
@@ -515,6 +517,7 @@ def notice_bar(cfg, depth):
 
 def footer(cfg, logical_page, locale):
     depth = logical_page.count("/")
+    brand_mark = "../" * (depth + (1 if locale == "en" else 0)) + "assets/img/brand-mark.svg"
     ui = cfg.get("ui", {})
     site = cfg["site"]
     prod_links = "".join(
@@ -530,7 +533,7 @@ def footer(cfg, logical_page, locale):
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="fb-logo">
-          <div class="logo">{e(site['logoText'])}</div>
+          <img class="brand-mark" src="{e(brand_mark)}" alt="" width="36" height="36">
           <strong>{e(site['brandName'])}</strong>
         </div>
         <p>{e(site.get('tagline', ''))}. {e(ui.get('footerTagline', '为主流 AI 服务提供会员选项与支持。'))}</p>
@@ -1046,15 +1049,9 @@ def main():
     # GitHub Pages 用它跳过 Jekyll 处理，避免下划线开头的文件被吞掉
     write(".nojekyll", "")
 
-    # 生成 favicon.svg
-    site = zh_cfg["site"]
-    favicon = (
-        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">'
-        '<rect width="64" height="64" rx="14" fill="#d6ed75"/>'
-        '<text x="32" y="43" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" '
-        'font-size="30" font-weight="700" fill="#183b2b">%s</text></svg>'
-        % html.escape(site["logoText"][:2])
-    )
+    # Keep the browser favicon in sync with the site brand mark.
+    with open(os.path.join(ROOT, "assets", "img", "brand-mark.svg"), encoding="utf-8") as fh:
+        favicon = fh.read()
     write("assets/img/favicon.svg", favicon)
 
     print("已生成 %d 个文件，其中草稿只写入本地预览目录：" % len(written))

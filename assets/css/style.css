@@ -175,7 +175,7 @@ ul { margin: 0; padding-left: 20px; }
 .footer-grid { display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; }
 .footer-brand { max-width: 340px; }
 .footer-brand .fb-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
-.footer-brand .fb-logo .logo { margin: 0; width: 36px; height: 36px; font-size: 16px; box-shadow: none; }
+.footer-brand .fb-logo .brand-mark { margin: 0; width: 36px; height: 36px; }
 .footer-brand .fb-logo strong { color: #fff; font-size: 17px; }
 .footer-brand p { font-size: 13.5px; line-height: 1.7; }
 .footer-col h5 { color: #fff; font-size: 14.5px; margin: 0 0 12px; }
@@ -563,7 +563,6 @@ table.cmp tbody tr:hover { background: #f7f9f3; }
 
 /* Shared finish */
 .main-footer { margin-top: 0; padding: 48px 0 28px; color: #c5d0c6; background: #102a21; }
-.footer-brand .fb-logo .logo { color: #193425; background: #d6ed75; box-shadow: none; }
 .footer-brand .fb-logo strong { color: #f6f8f2; }
 .footer-col h5 { color: #f4f7ee; }
 .footer-col a { color: #c5d0c6; }

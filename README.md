@@ -1,4 +1,4 @@
-# AI Pro Service
+# AI饼干科技
 
 中英双语静态网站：中文页面保留现有网址，英文页面位于 `/en/`。页面由本地 Python 构建，不需要网站后端或外部 CDN。
 
@@ -37,5 +37,6 @@ content/articles/zh-CN/        中文文章 Markdown
 content/articles/en/           英文文章 Markdown
 tools/build.py                 静态页面生成器
 assets/css/                    全站样式
+assets/img/brand-mark.svg     品牌图形标志（构建时同步为 favicon）
 assets/js/site.js              菜单、语言提示、客服与 FAQ 交互
 ```

@@ -103,14 +103,7 @@ body {
 .logo-container { display: flex; align-items: center; flex-shrink: 0; padding: 8px 10px; border-radius: 10px; transition: background 0.25s ease; }
 .logo-container:hover { background-color: rgba(111, 66, 193, 0.08); }
 
-.logo {
-  display: flex; align-items: center; justify-content: center;
-  width: 42px; height: 42px;
-  background: linear-gradient(135deg, #6f42c1, #9d5cf5);
-  color: #fff; font-size: 20px; font-weight: 700;
-  border-radius: 10px; margin-right: 12px;
-  box-shadow: 0 6px 14px rgba(111, 66, 193, 0.28);
-}
+.brand-mark { display: block; width: 42px; height: 42px; flex: 0 0 auto; margin-right: 12px; object-fit: contain; }
 
 .logo-text h1 { margin: 0; font-size: 20px; color: #343a40; font-weight: 700; letter-spacing: -0.2px; }
 .logo-text .subtitle { font-size: 12px; color: #868e96; }
@@ -195,7 +188,7 @@ body {
 
 @media (max-width: 520px) {
   :root { --header-height: 64px; }
-  .logo { width: 36px; height: 36px; font-size: 17px; margin-right: 10px; }
+  .brand-mark { width: 36px; height: 36px; margin-right: 10px; }
   .logo-text h1 { font-size: 17px; }
   .logo-text .subtitle { display: none; }
   .notice-bar .notice-inner { font-size: 12.5px; padding-right: 40px; }
@@ -217,10 +210,6 @@ body {
 .main-header.scrolled { box-shadow: 0 8px 22px rgba(18,48,33,.07); }
 .logo-container { padding-inline: 0; }
 .logo-container:hover { background: transparent; }
-.logo {
-  color: #183b2b; background: #d6ed75; border-radius: 12px; box-shadow: none;
-  font-family: "Avenir Next", "PingFang SC", sans-serif; letter-spacing: -.04em;
-}
 .logo-text h1 { color: #1c2c23; font-size: 17px; letter-spacing: -.35px; }
 .logo-text .subtitle { color: #7b877d; font-size: 11px; }
 .main-nav ul { gap: 4px; }
@@ -255,7 +244,7 @@ body {
 @media (max-width: 520px) {
   .main-header .container { padding-inline: 17px; }
   .logo-container { padding: 4px 0; }
-  .logo { width: 36px; height: 36px; margin-right: 9px; border-radius: 10px; }
+  .brand-mark { width: 36px; height: 36px; margin-right: 9px; }
   .logo-text h1 { font-size: 16px; }
   .notice-bar .notice-inner { font-size: 11px; line-height: 1.45; padding-left: 14px; padding-right: 40px; }
   .header-container > .user-actions > .query-btn { display: none; }

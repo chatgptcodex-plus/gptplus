@@ -3,10 +3,9 @@
 
   "site": {
     "title": "AI会员代充值服务",
-    "brandName": "AI Pro Service",
-    "logoText": "AI",
+    "brandName": "AI饼干科技",
     "tagline": "专业 · 稳定 · 售后无忧",
-    "copyright": "© 2025 AI Pro Service. All Rights Reserved.",
+    "copyright": "© 2025 AI饼干科技. All Rights Reserved.",
     "icp": "",
     "baseUrl": "https://chatgptcodex-plus.github.io/gptplus/",
     "_baseUrlHint": "发布后填成你的真实网址，例如 https://你的用户名.github.io/gptplus/ ；填好再跑一次 python3 tools/build.py，sitemap.xml 和 robots.txt 里的地址才正确。"

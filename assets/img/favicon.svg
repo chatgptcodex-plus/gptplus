@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#d6ed75"/><text x="32" y="43" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#183b2b">AI</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="brand-title">
+  <title id="brand-title">AI 饼干科技</title>
+  <rect width="64" height="64" rx="17" fill="#d6ed75"/>
+  <circle cx="29.5" cy="35" r="20" fill="#f5dda1" stroke="#193b2b" stroke-width="2.5"/>
+  <circle cx="46" cy="14" r="8.5" fill="#d6ed75"/>
+  <circle cx="55" cy="22" r="5.5" fill="#d6ed75"/>
+  <circle cx="50.5" cy="7.5" r="4.5" fill="#d6ed75"/>
+  <circle cx="19.5" cy="28" r="2.7" fill="#795637"/>
+  <circle cx="36" cy="22" r="2.5" fill="#795637"/>
+  <circle cx="41" cy="44.5" r="2.8" fill="#795637"/>
+  <path d="M28 30.5h11a2.5 2.5 0 0 1 2.5 2.5v7a2.5 2.5 0 0 1-2.5 2.5H28a2.5 2.5 0 0 1-2.5-2.5v-7a2.5 2.5 0 0 1 2.5-2.5Z" fill="#193b2b"/>
+  <path d="M29 30v-3m5 3v-3m5 3v-3m-10 18v-3m5 3v-3m5 3v-3m-16-8h3m-3 5h3m14-5h3m-3 5h3" fill="none" stroke="#193b2b" stroke-width="1.8" stroke-linecap="round"/>
+  <circle cx="33.5" cy="36.5" r="1.7" fill="#d6ed75"/>
+</svg>

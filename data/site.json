@@ -1,5 +1,5 @@
 {
-  "_readme": "这是全站唯一需要修改的内容文件。改完运行 python3 tools/build.py 重新生成页面。",
+  "_readme": "中文业务文案与价格在此；英文文案在 data/site.en.json；文章在 content/articles/zh-CN/ 与 content/articles/en/。改完运行 python3 tools/build.py 重新生成页面。",
 
   "site": {
     "title": "AI会员代充值服务",
@@ -13,9 +13,9 @@
   },
 
   "contact": {
-    "wechatList": ["aicygg888", "aicygg789"],
+    "wechatList": ["a13246246267"],
     "wechatHint": "如遇提示好友添加频繁，请扫描下方二维码",
-    "qrImage": "assets/img/wechat-qr.svg",
+    "qrImage": "assets/img/wechat-qr.png",
     "qrCaption": "微信扫码添加客服",
     "workTime": "工作时间：9:00 - 22:00",
     "orderQueryText": "查询订单",
@@ -30,59 +30,63 @@
 
   "noticeBar": {
     "enabled": true,
-    "text": "如遇购买充值码或充值系统网址打不开，请先关闭梯子（代理/VPN）再试；本页所有价格与权益以店铺内实际下单页为准。",
+    "text": "充值页无法打开？可先关闭代理/VPN重试；价格与权益以实际下单页为准。",
     "linkText": "联系客服",
     "linkUrl": "#"
   },
 
   "nav": [
     { "label": "首页", "href": "index.html", "icon": "home" },
-    { "label": "GPT", "href": "purchase-gpt.html", "icon": "sparkles" },
-    { "label": "Claude", "href": "purchase-claude.html", "icon": "c" },
-    { "label": "Gemini", "href": "purchase-gemini.html", "icon": "gem" },
-    { "label": "Perplexity", "href": "purchase-perplexity.html", "icon": "lightbulb" },
-    { "label": "Grok", "href": "purchase-grok.html", "icon": "rocket" },
-    { "label": "X Premium(+)", "href": "purchase-premium.html", "icon": "x" }
+    { "label": "全部服务", "href": "index.html#services", "icon": "layers" },
+    { "label": "购买流程", "href": "index.html#steps", "icon": "arrow" },
+    { "label": "常见问题", "href": "index.html#faq", "icon": "info" },
+    { "label": "文章指南", "href": "blog/index.html", "icon": "book" }
   ],
 
   "hero": {
-    "eyebrow": "AI 模型服务",
-    "title": "一站式 AI 会员代充值",
-    "subtitle": "为您提供快速、安全、便捷的 GPT Go/Plus/Pro/Codex、Claude Pro、Gemini Pro、SuperGrok 等主流 AI 会员升级与代充值服务。如需其它产品请添加客服微信咨询。",
+    "eyebrow": "6 款主流 AI 服务 · 一个入口",
+    "title": "主流 AI 会员",
+    "highlight": "一站选齐，开通更省心",
+    "subtitle": "ChatGPT、Claude、Gemini 等会员服务集中选购。多数服务无需提供密码；客服在线时段内，常见订单通常 5–30 分钟完成，充值失败全额退款。",
     "primaryCta": { "label": "查看全部服务", "href": "#services" },
     "secondaryCta": { "label": "联系客服", "action": "customer-service" },
+    "promises": [
+      { "icon": "shield", "title": "多数服务无需密码", "desc": "按产品说明提供必要信息，下单前可先咨询。" },
+      { "icon": "bolt", "title": "常见订单 5–30 分钟", "desc": "客服在线时段内处理；复杂订单会沟通时效。" },
+      { "icon": "headset", "title": "未能开通全额退款", "desc": "充值失败按说明退款，客服跟进处理。" }
+    ],
     "stats": [
-      { "value": "6+", "label": "主流 AI 服务" },
-      { "value": "5-30", "label": "分钟到账" },
-      { "value": "9:00-22:00", "label": "在线客服" },
-      { "value": "售后无忧", "label": "不成功可退" }
+      { "value": "6 款", "label": "主流 AI 服务" },
+      { "value": "5–30 分钟", "label": "在线时段常见订单" },
+      { "value": "9:00–22:00", "label": "客服在线时间" },
+      { "value": "失败全额退", "label": "充值未完成" }
     ]
   },
 
   "home": {
-    "servicesTitle": "支持的 AI 服务",
-    "servicesSubtitle": "点击对应卡片查看套餐、价格与充值说明",
+    "servicesTitle": "选择你要开通的服务",
+    "servicesSubtitle": "点开产品，查看适用方式、套餐价格与当期权益",
     "services": [
-      { "name": "GPT", "icon": "sparkles", "href": "purchase-gpt.html", "desc": "体验最前沿的通用人工智能，解锁 GPT-5 / Codex 的强大能力。", "cta": "立即充值" },
-      { "name": "Claude", "icon": "c", "href": "purchase-claude.html", "desc": "Anthropic 出品的强大对话模型，擅长长文本处理和深度对话。", "cta": "立即充值" },
-      { "name": "Gemini", "icon": "gem", "href": "purchase-gemini.html", "desc": "Google 推出的新一代多模态大模型，原生支持文本、图片和视频。", "cta": "立即充值" },
-      { "name": "Perplexity Pro", "icon": "lightbulb", "href": "purchase-perplexity.html", "desc": "AI 搜索引擎，支持 GPT、Claude 等多种模型，提供深度研究与智能问答。", "cta": "立即充值" },
-      { "name": "Grok", "icon": "rocket", "href": "purchase-grok.html", "desc": "xAI 打造的 AI 模型，以实时信息获取和独特的幽默感为特色。", "cta": "立即充值" },
-      { "name": "X Premium(+)", "icon": "x", "href": "purchase-premium.html", "desc": "X 平台高级会员，蓝标认证、无广告体验、更高 Grok 额度与创作权益。", "cta": "立即充值" }
+      { "name": "GPT / ChatGPT", "icon": "sparkles", "href": "purchase-gpt.html", "desc": "Go、Plus、Pro 与 Codex 相关服务；先看套餐和适用方式，再选择开通。", "cta": "查看套餐" },
+      { "name": "Claude", "icon": "c", "href": "purchase-claude.html", "desc": "Pro / Max 会员服务，套餐、开通说明和当期价格一页查看。", "cta": "查看套餐" },
+      { "name": "Gemini", "icon": "gem", "href": "purchase-gemini.html", "desc": "Gemini Pro / Ultra 服务，了解开通方式与当前权益。", "cta": "查看套餐" },
+      { "name": "Perplexity Pro", "icon": "lightbulb", "href": "purchase-perplexity.html", "desc": "AI 搜索与深度研究会员，查看套餐后再决定是否开通。", "cta": "查看套餐" },
+      { "name": "Grok", "icon": "rocket", "href": "purchase-grok.html", "desc": "SuperGrok 等服务，开通条件与套餐详情见产品页。", "cta": "查看套餐" },
+      { "name": "X Premium(+)", "icon": "x", "href": "purchase-premium.html", "desc": "X Premium / Premium+ 会员服务，查看权益与开通说明。", "cta": "查看套餐" }
     ],
-    "stepsTitle": "购买流程",
+    "stepsTitle": "下单流程，四步完成",
     "steps": [
-      { "title": "选择服务", "desc": "在对应产品页挑选你需要的套餐档位。" },
-      { "title": "点击立即购买", "desc": "跳转到充值店铺，用微信或支付宝完成支付。" },
-      { "title": "获取充值码", "desc": "支付成功后页面会显示卡密/充值码，请截图保存。" },
-      { "title": "按说明充值", "desc": "按页面说明操作；如需代充，凭订单联系客服即可。" }
+      { "title": "选产品与套餐", "desc": "先确认会员档位、适用账号和页面列出的服务条件。" },
+      { "title": "查看下单方式", "desc": "按产品页说明前往店铺下单；不确定时先联系客服确认。" },
+      { "title": "完成支付并留存订单", "desc": "支付后保存订单信息或充值码，方便查询与售后。" },
+      { "title": "开通与售后跟进", "desc": "按页面指引完成充值；遇到问题可联系在线客服。" }
     ],
-    "guaranteesTitle": "为什么选择我们",
+    "guaranteesTitle": "下单前，你最关心的事",
     "guarantees": [
-      { "icon": "bolt", "title": "快速到账", "desc": "正规官方通道，大多数订单一小时内完成，无需长时间等待。" },
-      { "icon": "shield", "title": "安全可靠", "desc": "代充仅需账号，无需密码，充值完成后可自行修改密码。" },
-      { "icon": "headset", "title": "全程售后", "desc": "专业客服在线答疑，充值失败或未到账可全额退款。" },
-      { "icon": "layers", "title": "品类齐全", "desc": "GPT、Claude、Gemini、Grok、Perplexity、X 会员一站购齐。" }
+      { "icon": "bolt", "title": "处理时效清楚", "desc": "客服在线时段内，常见订单通常 5–30 分钟完成；复杂订单会沟通时效。" },
+      { "icon": "shield", "title": "尽量少提供信息", "desc": "多数服务无需提供密码；所需账号信息以对应产品页说明为准。" },
+      { "icon": "headset", "title": "问题有人跟进", "desc": "客服在线时间为 9:00–22:00；充值未能完成按说明全额退款。" },
+      { "icon": "layers", "title": "多个服务集中查看", "desc": "GPT、Claude、Gemini、Perplexity、Grok 与 X 会员都可在这里查看套餐。" }
     ],
     "faqTitle": "常见问题",
     "faq": [
@@ -678,37 +682,74 @@
     }
   ],
 
-  "blog": [
-    {
-      "slug": "chatgpt-register-guide",
-      "page": "blog/chatgpt-register-guide.html",
-      "title": "ChatGPT 免费注册图文教程",
-      "metaTitle": "ChatGPT 注册教程 - 免费注册 ChatGPT 账号",
-      "subtitle": "手把手教你用邮箱在 chatgpt.com 免费注册一个属于自己的 ChatGPT 账号，注册完成后再回来购买充值服务即可。",
-      "sections": [
-        {
-          "type": "steps",
-          "title": "注册步骤",
-          "items": [
-            { "title": "准备邮箱", "desc": "准备一个可以正常收信的邮箱（Gmail、Outlook、QQ 邮箱均可），建议使用国际邮箱，成功率更高。" },
-            { "title": "打开注册页", "desc": "浏览器访问 chatgpt.com，点击右上角「Sign up」，输入邮箱地址并设置密码。" },
-            { "title": "查收验证邮件", "desc": "到邮箱收件箱（含垃圾箱）查找验证邮件，点击其中的验证链接完成邮箱验证。" },
-            { "title": "填写姓名与生日", "desc": "按提示填写姓名和出生日期，完成后即可进入 ChatGPT 对话界面。" },
-            { "title": "手机号验证（如需）", "desc": "部分网络环境会要求手机号验证。若无法通过，可联系客服协助，或直接购买成品号。" },
-            { "title": "登录并检查", "desc": "退出后重新登录，确认账号可以正常使用，然后回到本站购买 Plus 等充值服务。" }
-          ]
-        },
-        {
-          "type": "rich",
-          "title": "常见问题",
-          "html": "<ul><li><strong>注册时提示地区不支持？</strong>请检查网络环境，或换一个邮箱重新尝试。</li><li><strong>收不到验证邮件？</strong>先检查垃圾邮件箱；QQ 邮箱有时会延迟，可等待 5 分钟或换邮箱。</li><li><strong>手机号验证过不去？</strong>可以联系客服协助，或直接购买我们的成品号，交付账密即可登录。</li><li><strong>注册后就能用 Plus 功能吗？</strong>不能。免费账号需要购买 Plus/Pro 等会员才能解锁对应权益。</li></ul>"
-        },
-        {
-          "type": "rich",
-          "title": "下一步",
-          "html": "<p>账号注册完成后，回到 <a href=\"../purchase-gpt.html\">GPT 充值页</a> 选择合适的套餐，或直接联系客服微信协助下单。</p>"
-        }
-      ]
-    }
-  ]
+  "ui": {
+    "languageSwitch": "EN",
+    "languageLabel": "语言",
+    "navigationLabel": "主导航",
+    "currencySymbol": "¥",
+    "originalPriceLabel": "原价",
+    "switchToEnglish": "浏览器语言偏好为英文",
+    "switchToChinese": "浏览器语言偏好为中文",
+    "switchLanguage": "切换语言",
+    "dismiss": "关闭提示",
+    "dismissNotice": "关闭公告",
+    "homeLabel": "首页",
+    "productCatalog": "产品目录",
+    "queryOrder": "查询订单",
+    "mobileMenu": "展开菜单",
+    "customerService": "联系客服",
+    "contactLabel": "客服微信：",
+    "copyWechat": "点击微信号即可复制",
+    "copied": "已复制微信号：",
+    "copyManually": "请手动复制：",
+    "unavailablePlan": "该套餐请添加客服微信下单",
+    "modalTitle": "联系客服",
+    "modalServicesTitle": "AI 工具充值服务",
+    "modalServicesIntro": "支持充值多种 AI 工具，让您畅享智能体验：",
+    "wechatLabel": "微信号：",
+    "copyHint": "点击微信号即可复制",
+    "articleCenter": "文章指南",
+    "articleCenterSubtitle": "ChatGPT 注册、套餐选择和常见问题的实用指南。",
+    "articleEmpty": "英文文章正在准备中，敬请期待。",
+    "latestGuides": "最新指南",
+    "readArticle": "阅读指南",
+    "backToGuides": "全部文章",
+    "backToProduct": "查看 GPT 套餐",
+    "published": "发布于",
+    "updated": "更新于",
+    "importantInfo": "重要说明",
+    "checkoutLanguageNote": "外部店铺和付款页面目前为中文。",
+    "footerTagline": "为主流 AI 服务提供会员选项与支持。",
+    "footerProducts": "充值服务",
+    "footerHelp": "帮助中心",
+    "footerContact": "联系我们",
+    "faqLink": "常见问题",
+    "stepsLink": "购买流程",
+    "qrAction": "扫码添加客服",
+    "thirdPartyDisclaimer": "本站为第三方服务，与 OpenAI、Anthropic、Google、xAI 或 X 均无隶属关系；所有商标归其各自所有者所有。",
+    "noticePrices": "价格与权益以实际下单页为准。",
+    "planNote": "下单前请与客服确认账号状态和当前条款。",
+    "contactHelp": "下单前有疑问？请联系客服确认。",
+    "relatedServices": "其他充值服务",
+    "relatedServicesSubtitle": "查看其他 AI 服务的套餐选项。",
+    "viewPlan": "查看套餐",
+    "viewButton": "查看",
+    "buyAction": "去下单",
+    "supportAction": "联系客服",
+    "contactAction": "联系客服 →",
+    "registrationGuide": "注册教程",
+    "breadcrumbLabel": "面包屑",
+    "servicePromise": "服务承诺",
+    "servicePromiseEnglish": "SERVICE PROMISE",
+    "heroProofTitle": "下单前，先把关心的事说清楚。",
+    "heroFlowLink": "看看购买流程",
+    "viewAllArticles": "查看全部文章",
+    "relatedArticles": "相关文章",
+    "articleCtaTitle": "需要 ChatGPT 会员选项？",
+    "articleCtaText": "查看当前列出的服务方式和套餐信息。",
+    "floatingSupport": "客服",
+    "viewAllServices": "查看全部服务",
+    "stepsSectionSubtitle": "先确认套餐和下单信息，再按页面说明操作。",
+    "faqSectionSubtitle": "如未找到答案，请联系客服。"
+  }
 }

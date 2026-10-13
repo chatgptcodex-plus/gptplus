@@ -9,6 +9,7 @@
   } catch (e) { cfg = {}; }
 
   var contact = cfg.contact || {};
+  var ui = cfg.ui || {};
   var wechatList = contact.wechatList || [];
   var qrImage = contact.qrImage || '';
   var services = contact.modalServices || [];
@@ -42,6 +43,52 @@
     applyNoticeHeight();
     window.addEventListener('resize', applyNoticeHeight);
     window.addEventListener('load', applyNoticeHeight);
+  }
+
+  /* ---------- Browser-language suggestion; URLs stay explicitly localized ---------- */
+  function initLanguageSuggestion() {
+    var box = document.querySelector('.language-suggestion');
+    if (!box) return;
+    var locale = box.getAttribute('data-locale');
+    var targetLocale = box.getAttribute('data-target-locale');
+    var preferred = '';
+    try { preferred = localStorage.getItem('site-language-choice') || ''; } catch (e) {}
+    if (!preferred) {
+      var browserLanguages = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+      var first = String(browserLanguages[0] || '').toLowerCase();
+      if (first.indexOf('en') === 0) preferred = 'en';
+      else if (first.indexOf('zh') === 0) preferred = 'zh-CN';
+    }
+    if (!preferred || preferred === locale || preferred !== targetLocale) return;
+    try { if (localStorage.getItem('language-suggestion-dismissed-' + targetLocale) === '1') return; } catch (e) {}
+
+    var prompt = box.getAttribute('data-prompt') || ui.switchLanguage || 'Switch language';
+    var text = box.querySelector('.language-suggestion-text');
+    var link = box.querySelector('.language-suggestion-link');
+    var dismiss = box.querySelector('.language-suggestion-dismiss');
+    if (text) text.textContent = prompt;
+    if (link) link.textContent = box.getAttribute('data-switch-label') || ui.switchLanguage || 'Switch language';
+    box.hidden = false;
+
+    if (link) {
+      link.addEventListener('click', function () {
+        try { localStorage.setItem('site-language-choice', targetLocale); } catch (e) {}
+      });
+    }
+    if (dismiss) {
+      dismiss.addEventListener('click', function () {
+        box.hidden = true;
+        try { localStorage.setItem('language-suggestion-dismissed-' + targetLocale, '1'); } catch (e) {}
+      });
+    }
+  }
+
+  function initLanguageLinks() {
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest('[data-language-choice]');
+      if (!link) return;
+      try { localStorage.setItem('site-language-choice', link.getAttribute('data-language-choice')); } catch (err) {}
+    });
   }
 
   /* ---------- 移动端导航 ---------- */
@@ -91,7 +138,7 @@
   /* ---------- 复制微信 ---------- */
   function copyText(text) {
     var handled = false;
-    function done() { if (handled) return; handled = true; toast('已复制微信号：' + text); }
+    function done() { if (handled) return; handled = true; toast((ui.copied || '已复制微信号：') + text); }
     function fallback() {
       if (handled) return;
       var ta = document.createElement('textarea');
@@ -103,7 +150,7 @@
       var ok = false;
       try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
       document.body.removeChild(ta);
-      if (ok) done(); else { handled = true; toast('请手动复制：' + text); }
+      if (ok) done(); else { handled = true; toast((ui.copyManually || '请手动复制：') + text); }
     }
 
     if (navigator.clipboard && navigator.clipboard.writeText && window.isSecureContext) {
@@ -143,24 +190,24 @@
     }).join(' / ');
 
     var html = '' +
-      '<div class="cs-modal" role="dialog" aria-modal="true" aria-label="联系客服">' +
+      '<div class="cs-modal" role="dialog" aria-modal="true" aria-label="' + (ui.modalTitle || '联系客服') + '">' +
         '<div class="cs-card">' +
           '<div class="cs-head">' +
-            '<h3>联系客服</h3>' +
-            '<button class="cs-close" type="button" aria-label="关闭">' +
+            '<h3>' + (ui.modalTitle || '联系客服') + '</h3>' +
+            '<button class="cs-close" type="button" aria-label="' + (ui.dismiss || '关闭') + '">' +
               '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>' +
             '</button>' +
           '</div>' +
           '<div class="cs-panel">' +
-            '<h4>AI 工具充值服务</h4>' +
-            '<p>支持充值多种 AI 工具，让您畅享智能体验：</p>' +
+            '<h4>' + (ui.modalServicesTitle || 'AI 工具充值服务') + '</h4>' +
+            '<p>' + (ui.modalServicesIntro || '支持充值多种 AI 工具，让您畅享智能体验：') + '</p>' +
             '<div class="cs-chips">' + chips + '</div>' +
           '</div>' +
           '<div class="cs-qr">' +
-            (qrImage ? '<img src="' + qrImage + '" alt="微信二维码">' : '') +
-            '<div class="cs-wechat">微信号：' + ids + '</div>' +
+            (qrImage ? '<img src="' + qrImage + '" alt="' + (contact.qrCaption || ui.qrCaption || '微信二维码') + '">' : '') +
+            '<div class="cs-wechat">' + (ui.wechatLabel || '微信号：') + ids + '</div>' +
             '<p class="cs-time">' + (contact.workTime || '') + '</p>' +
-            '<p class="cs-time" style="margin-top:6px">点击微信号即可复制</p>' +
+            '<p class="cs-time" style="margin-top:6px">' + (ui.copyHint || '点击微信号即可复制') + '</p>' +
           '</div>' +
         '</div>' +
       '</div>';
@@ -225,7 +272,7 @@
       var url = btn.getAttribute('data-buy');
       if (!url || url === '#') {
         e.preventDefault();
-        toast('该套餐请添加客服微信下单');
+        toast(ui.unavailablePlan || '该套餐请添加客服微信下单');
         openCustomerService(e);
       }
     });
@@ -247,6 +294,8 @@
   /* ---------- 启动 ---------- */
   function init() {
     initNoticeBar();
+    initLanguageSuggestion();
+    initLanguageLinks();
     initMobileNav();
     initHeaderShadow();
     initCopy();
@@ -261,8 +310,8 @@
       fab.className = 'fab';
       fab.type = 'button';
       fab.setAttribute('data-action', 'customer-service');
-      fab.setAttribute('aria-label', '联系客服');
-      fab.innerHTML = svgChat() + '<span>客服</span>';
+      fab.setAttribute('aria-label', ui.customerService || '联系客服');
+      fab.innerHTML = svgChat() + '<span>' + (ui.floatingSupport || '客服') + '</span>';
       document.body.appendChild(fab);
     }
 

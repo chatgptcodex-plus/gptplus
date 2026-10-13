@@ -1,0 +1,802 @@
+{
+  "site": {
+    "title": "AI Membership Services",
+    "brandName": "AI Pro Service",
+    "logoText": "AI",
+    "tagline": "Clear terms · Reliable support",
+    "copyright": "© 2025 AI Pro Service. All Rights Reserved.",
+    "description": "Compare AI membership options and get help with ChatGPT, Claude, Gemini, Perplexity, Grok, and X Premium services."
+  },
+  "contact": {
+    "wechatList": [
+      "a13246246267"
+    ],
+    "wechatHint": "If WeChat will not accept a new contact, scan the QR code below.",
+    "qrImage": "assets/img/wechat-qr.png",
+    "qrCaption": "Scan to contact support",
+    "workTime": "Support: 9:00–22:00 China Standard Time (UTC+8)",
+    "orderQueryText": "Order lookup",
+    "orderQueryUrl": "",
+    "modalServices": [
+      "ChatGPT Plus / Pro",
+      "Claude Pro / Max",
+      "Gemini Pro / Ultra",
+      "Perplexity Pro",
+      "SuperGrok",
+      "X Premium+",
+      "Codex options",
+      "Other services"
+    ]
+  },
+  "noticeBar": {
+    "enabled": true,
+    "text": "If a service or ordering page does not open, try disabling your VPN or proxy. Confirm final details before ordering.",
+    "linkText": "Contact support",
+    "linkUrl": "#"
+  },
+  "nav": [
+    {
+      "label": "Home",
+      "href": "index.html",
+      "icon": "home"
+    },
+    {
+      "label": "Services",
+      "href": "index.html#services",
+      "icon": "layers"
+    },
+    {
+      "label": "How it works",
+      "href": "index.html#steps",
+      "icon": "arrow"
+    },
+    {
+      "label": "FAQ",
+      "href": "index.html#faq",
+      "icon": "info"
+    },
+    {
+      "label": "Guides",
+      "href": "blog/index.html",
+      "icon": "book"
+    }
+  ],
+  "ui": {
+    "languageSwitch": "中文",
+    "languageLabel": "Language",
+    "navigationLabel": "Main navigation",
+    "currencySymbol": "CNY ",
+    "originalPriceLabel": "Was",
+    "unitTranslations": {
+      "/ 月": "/ month",
+      "/ 年": "/ year",
+      "/ 个": "/ account"
+    },
+    "dismissNotice": "Dismiss notice",
+    "switchToEnglish": "Prefer English?",
+    "switchToChinese": "Prefer Chinese?",
+    "switchLanguage": "Switch language",
+    "dismiss": "Dismiss",
+    "homeLabel": "Home",
+    "productCatalog": "Product catalog",
+    "queryOrder": "Order lookup",
+    "mobileMenu": "Open menu",
+    "customerService": "Contact support",
+    "contactLabel": "WeChat support:",
+    "copyWechat": "Select a WeChat ID to copy it.",
+    "copied": "Copied WeChat ID: ",
+    "copyManually": "Please copy manually: ",
+    "unavailablePlan": "Please contact support to order this plan.",
+    "modalTitle": "Contact support",
+    "modalServicesTitle": "AI membership services",
+    "modalServicesIntro": "We can help with membership options for these services:",
+    "wechatLabel": "WeChat:",
+    "copyHint": "Select a WeChat ID to copy it.",
+    "articleCenter": "Article guides",
+    "articleCenterSubtitle": "Practical ChatGPT guides, plan comparisons, and troubleshooting.",
+    "articleEmpty": "English guides are being prepared. Check back soon.",
+    "latestGuides": "Latest guides",
+    "readArticle": "Read guide",
+    "backToGuides": "All guides",
+    "backToProduct": "View ChatGPT plans",
+    "published": "Published",
+    "updated": "Updated",
+    "importantInfo": "Important information",
+    "checkoutLanguageNote": "The external checkout page is currently in Chinese.",
+    "footerTagline": "Membership options and support for leading AI services.",
+    "footerProducts": "Services",
+    "footerHelp": "Help center",
+    "footerContact": "Contact",
+    "faqLink": "Frequently asked questions",
+    "stepsLink": "How ordering works",
+    "qrAction": "Scan to contact support",
+    "thirdPartyDisclaimer": "This is an independent third-party service and is not affiliated with OpenAI, Anthropic, Google, xAI, or X. All trademarks belong to their respective owners.",
+    "noticePrices": "Confirm prices and benefits with support before ordering.",
+    "planNote": "Confirm account eligibility and current terms with support before ordering.",
+    "contactHelp": "Questions? Contact support before ordering.",
+    "relatedServices": "Other services",
+    "relatedServicesSubtitle": "Browse options for other AI services.",
+    "viewPlan": "View plans",
+    "viewButton": "View",
+    "buyAction": "Go to checkout",
+    "supportAction": "Contact support",
+    "contactAction": "Contact support →",
+    "registrationGuide": "Chinese registration guide",
+    "breadcrumbLabel": "Breadcrumb",
+    "servicePromise": "Service commitments",
+    "servicePromiseEnglish": "SERVICE PROMISE",
+    "heroProofTitle": "Know the important details before you order.",
+    "heroFlowLink": "See how ordering works",
+    "viewAllArticles": "Browse all guides",
+    "relatedArticles": "Related guides",
+    "articleCtaTitle": "Looking for ChatGPT membership options?",
+    "articleCtaText": "Review the current service options and ordering details.",
+    "floatingSupport": "Support",
+    "viewAllServices": "Browse services",
+    "stepsSectionSubtitle": "Review the plan, confirm the details, then follow the checkout instructions.",
+    "faqSectionSubtitle": "If your question is not covered here, contact support."
+  },
+  "hero": {
+    "eyebrow": "6 leading AI services · one place",
+    "title": "AI memberships",
+    "highlight": "Compare options. Get clear support.",
+    "subtitle": "Browse services for ChatGPT, Claude, Gemini, and more. Most options do not require your password. During support hours, common orders usually take 5–30 minutes; if a top-up cannot be completed, the site states that it will be fully refunded.",
+    "primaryCta": {
+      "label": "Browse services",
+      "href": "#services"
+    },
+    "secondaryCta": {
+      "label": "Contact support",
+      "action": "customer-service"
+    },
+    "promises": [
+      {
+        "icon": "shield",
+        "title": "Most options do not need your password",
+        "desc": "Only provide the information listed on the product page. Ask support before ordering if unsure."
+      },
+      {
+        "icon": "bolt",
+        "title": "Common orders: 5–30 minutes",
+        "desc": "Typical during support hours; support will clarify timing for complex orders."
+      },
+      {
+        "icon": "headset",
+        "title": "Refund if activation cannot be completed",
+        "desc": "Contact support to follow up on an unsuccessful order."
+      }
+    ],
+    "stats": [
+      {
+        "value": "6 services",
+        "label": "AI membership options"
+      },
+      {
+        "value": "5–30 min",
+        "label": "Common orders during support hours"
+      },
+      {
+        "value": "9am–10pm",
+        "label": "China Standard Time support"
+      },
+      {
+        "value": "Full refund",
+        "label": "If top-up cannot be completed"
+      }
+    ]
+  },
+  "home": {
+    "servicesTitle": "Choose a service",
+    "servicesSubtitle": "Open a product page to review plans, eligibility, and current terms.",
+    "services": [
+      {
+        "name": "ChatGPT / GPT",
+        "icon": "sparkles",
+        "href": "purchase-gpt.html",
+        "desc": "Options related to Go, Plus, Pro, and Codex. Compare the listed terms before ordering.",
+        "cta": "View plans"
+      },
+      {
+        "name": "Claude",
+        "icon": "c",
+        "href": "purchase-claude.html",
+        "desc": "Pro and Max options with plan details and ordering notes.",
+        "cta": "View plans"
+      },
+      {
+        "name": "Gemini",
+        "icon": "gem",
+        "href": "purchase-gemini.html",
+        "desc": "Google AI Pro and Ultra options. Review account requirements before ordering.",
+        "cta": "View plans"
+      },
+      {
+        "name": "Perplexity Pro",
+        "icon": "lightbulb",
+        "href": "purchase-perplexity.html",
+        "desc": "Search and research membership options with monthly and annual listings.",
+        "cta": "View plans"
+      },
+      {
+        "name": "Grok",
+        "icon": "rocket",
+        "href": "purchase-grok.html",
+        "desc": "SuperGrok options and account notes.",
+        "cta": "View plans"
+      },
+      {
+        "name": "X Premium+",
+        "icon": "x",
+        "href": "purchase-premium.html",
+        "desc": "X Premium and Premium+ options with listed benefits and terms.",
+        "cta": "View plans"
+      }
+    ],
+    "stepsTitle": "How ordering works",
+    "steps": [
+      {
+        "title": "Choose a service and plan",
+        "desc": "Check the plan, supported account, and conditions shown on its page."
+      },
+      {
+        "title": "Review the ordering method",
+        "desc": "Follow the product page instructions. Contact support first if anything is unclear."
+      },
+      {
+        "title": "Pay and keep your order details",
+        "desc": "Save your order information or redemption code for support and lookup."
+      },
+      {
+        "title": "Complete activation",
+        "desc": "Follow the instructions and contact support if you run into a problem."
+      }
+    ],
+    "guaranteesTitle": "What to know before ordering",
+    "guarantees": [
+      {
+        "icon": "bolt",
+        "title": "Clear timing expectations",
+        "desc": "Common orders usually take 5–30 minutes during support hours. Complex orders may take longer."
+      },
+      {
+        "icon": "shield",
+        "title": "Share only required information",
+        "desc": "Most options do not require a password. Check the relevant product page for details."
+      },
+      {
+        "icon": "headset",
+        "title": "Support follows up",
+        "desc": "Support hours are 9:00–22:00 China Standard Time. The site states that failed top-ups are fully refunded."
+      },
+      {
+        "icon": "layers",
+        "title": "Several services in one place",
+        "desc": "Compare options for ChatGPT, Claude, Gemini, Perplexity, Grok, and X Premium."
+      }
+    ],
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "Do I need to share my account password?",
+        "a": "Most options do not require a password. The product page lists the information needed for each service. Preconfigured accounts may be delivered with credentials; check the listing before ordering."
+      },
+      {
+        "q": "How long does activation take?",
+        "a": "The site lists 5–30 minutes as typical during support hours. Peak periods or manual processing may take longer; contact support for an update."
+      },
+      {
+        "q": "Why might an ordering page not load?",
+        "a": "Some service pages may not work reliably through a VPN or proxy. Try disabling it and reopening the page, or contact support."
+      },
+      {
+        "q": "What happens if a top-up fails?",
+        "a": "The site states that an unsuccessful top-up is fully refunded. Contact support with your order details."
+      },
+      {
+        "q": "Which payment methods are available?",
+        "a": "Contact support to confirm the available payment methods before ordering."
+      },
+      {
+        "q": "Can I order without an account?",
+        "a": "Some listings offer preconfigured accounts. Otherwise, use the registration guide or contact support to confirm the available options."
+      }
+    ]
+  },
+  "products": [
+    {
+      "slug": "gpt",
+      "page": "purchase-gpt.html",
+      "navLabel": "ChatGPT",
+      "title": "ChatGPT Go, Plus, Pro & Codex options",
+      "metaTitle": "ChatGPT Membership Options | AI Pro Service",
+      "breadcrumb": "ChatGPT options",
+      "subtitle": "Compare the ChatGPT options listed here. Benefits, eligibility, and official plan availability can change; confirm the current terms before ordering.",
+      "icon": "sparkles",
+      "guideUrl": "../blog/chatgpt-register-guide.html",
+      "notice": {
+        "tone": "warn",
+        "title": "Check availability before ordering",
+        "html": "<p>Availability and activation methods can change. Contact support to confirm your account and the current option before you pay.</p>"
+      },
+      "options": {
+        "title": "Do you already have a ChatGPT account?",
+        "subtitle": "Review the available paths",
+        "items": [
+          {
+            "icon": "cart",
+            "title": "Preconfigured account",
+            "desc": "The listing shows a separate Free account option with credentials supplied.",
+            "cta": "See plans",
+            "href": "#plans"
+          },
+          {
+            "icon": "book",
+            "title": "Register your own account",
+            "desc": "The current step-by-step guide is in Chinese; contact support if you need help.",
+            "cta": "Chinese guide",
+            "href": "../blog/chatgpt-register-guide.html"
+          }
+        ]
+      },
+      "plansTitle": "Available options",
+      "plans": {
+        "ChatGPT Free 账号": {
+          "name": "ChatGPT Free account",
+          "subtitle": "Separate preconfigured account",
+          "desc": "A separate account supplied with credentials. Confirm the current verification and account terms before ordering.",
+          "tags": [
+            "Separate account",
+            "Credentials supplied",
+            "Check verification needs"
+          ],
+          "features": [
+            "A separate ChatGPT Free account",
+            "Credentials supplied for sign-in",
+            "Useful as a separate or backup account",
+            "Check current phone or account verification requirements before ordering"
+          ],
+          "cta": "View checkout"
+        },
+        "ChatGPT Go 会员": {
+          "name": "ChatGPT Go",
+          "subtitle": "Lower-cost membership option",
+          "desc": "A lower-cost option for expanded access to eligible ChatGPT features. Benefits and availability depend on the current official plan and account.",
+          "tags": [
+            "Everyday use",
+            "Expanded eligible features",
+            "Review current terms"
+          ],
+          "features": [
+            "More access than Free for eligible tools",
+            "Higher limits for selected features",
+            "Availability and benefits may vary",
+            "Check the official plan details before ordering"
+          ],
+          "cta": "View checkout"
+        },
+        "ChatGPT Plus": {
+          "name": "ChatGPT Plus",
+          "subtitle": "Individual plan option",
+          "desc": "An option for expanded access to ChatGPT features. Confirm the current plan benefits and account eligibility before ordering.",
+          "tags": [
+            "Account top-up",
+            "No password for most options"
+          ],
+          "features": [
+            "Expanded access to ChatGPT tools and models, subject to current availability",
+            "Advanced features and tools depend on the official plan",
+            "The listing offers top-up or preconfigured account paths",
+            "Confirm the exact terms with support before ordering"
+          ],
+          "options": [
+            {
+              "label": "Top up your account",
+              "desc": "Contact support to confirm the current activation instructions.",
+              "action": "buy"
+            },
+            {
+              "label": "Preconfigured account",
+              "desc": "Contact support for the listed account option.",
+              "action": "wechat"
+            }
+          ],
+          "cta": "Contact support"
+        },
+        "ChatGPT Pro 5x": {
+          "name": "ChatGPT Pro 5x",
+          "subtitle": "Higher-use option · listed as 5x",
+          "desc": "This listing describes a higher-use option relative to its Plus comparison. Confirm exactly what is included before ordering.",
+          "tags": [
+            "Higher usage",
+            "Priority support",
+            "For intensive workflows"
+          ],
+          "features": [
+            "The 5x label refers to the allowance described by this listing",
+            "Benefits and limits are subject to the account and official availability",
+            "Contact support to confirm the current activation path",
+            "Confirm ordering details with support"
+          ],
+          "cta": "Contact support"
+        },
+        "ChatGPT Pro 20x": {
+          "name": "ChatGPT Pro 20x",
+          "subtitle": "Highest-use option · listed as 20x",
+          "desc": "This listing describes the highest-use option relative to its Plus comparison. Confirm exactly what is included before ordering.",
+          "tags": [
+            "Higher usage",
+            "For intensive workflows",
+            "Confirm current terms"
+          ],
+          "features": [
+            "The 20x label refers to the allowance described by this listing",
+            "Benefits and limits are subject to the account and official availability",
+            "Contact support to confirm the current activation path",
+            "Confirm ordering details with support"
+          ],
+          "cta": "Contact support"
+        }
+      },
+      "importantNotes": [
+        "Official plan names, features, and availability can change. Check OpenAI's current plan page.",
+        "Most options do not require a password; follow the product listing for account information requirements.",
+        "Contact support to confirm how the current option is fulfilled."
+      ]
+    },
+    {
+      "slug": "claude",
+      "page": "purchase-claude.html",
+      "navLabel": "Claude",
+      "title": "Claude Pro and Max options",
+      "metaTitle": "Claude Membership Options | AI Pro Service",
+      "breadcrumb": "Claude options",
+      "subtitle": "Compare the Claude Pro and Max options listed here. Account eligibility and activation methods can vary; confirm with support before ordering.",
+      "icon": "c",
+      "plansTitle": "Available options",
+      "notice": {
+        "tone": "info",
+        "title": "Confirm account availability first",
+        "html": "<p>Account region and payment eligibility may affect activation. Send your account email to support for a check before paying. Do not share your password.</p>"
+      },
+      "plans": {
+        "Claude Pro": {
+          "name": "Claude Pro",
+          "subtitle": "Individual option · standard allowance",
+          "desc": "A Pro option for individual use. Exact model access and limits depend on the current official plan.",
+          "tags": [
+            "No password",
+            "Account top-up",
+            "Model access varies"
+          ],
+          "features": [
+            "Access to eligible Claude models and tools",
+            "Higher usage than the free plan, subject to current limits",
+            "Projects, file uploads, and other tools depend on availability",
+            "Only provide the account information requested on the product page"
+          ],
+          "cta": "View checkout"
+        },
+        "Claude Max 5x": {
+          "name": "Claude Max 5x",
+          "subtitle": "Higher-use option · listed as 5x",
+          "desc": "A higher-use option for customers who use Claude more intensively. Confirm the current allowance before ordering.",
+          "tags": [
+            "Higher usage",
+            "For developers",
+            "Confirm eligibility"
+          ],
+          "features": [
+            "The 5x label refers to the allowance described by this listing",
+            "Availability depends on account eligibility and current official terms",
+            "Contact support to confirm the activation process",
+            "Confirm the final quote before ordering"
+          ],
+          "cta": "View checkout"
+        },
+        "Claude Max 20x": {
+          "name": "Claude Max 20x",
+          "subtitle": "Highest-use option · listed as 20x",
+          "desc": "A higher-use option for intensive individual or team workflows. Confirm the current allowance before ordering.",
+          "tags": [
+            "Higher usage",
+            "For intensive workflows",
+            "Confirm eligibility"
+          ],
+          "features": [
+            "The 20x label refers to the allowance described by this listing",
+            "Availability depends on account eligibility and current official terms",
+            "Contact support to confirm the activation process",
+            "Confirm the final quote before ordering"
+          ],
+          "cta": "View checkout"
+        }
+      },
+      "importantNotes": [
+        "Account eligibility and plan benefits can vary. Confirm your account before ordering.",
+        "Product benefits are determined by the official service after activation.",
+        "Contact support to confirm the current ordering method."
+      ]
+    },
+    {
+      "slug": "gemini",
+      "page": "purchase-gemini.html",
+      "navLabel": "Gemini",
+      "title": "Google AI Pro and Ultra options",
+      "metaTitle": "Gemini Membership Options | AI Pro Service",
+      "breadcrumb": "Gemini options",
+      "subtitle": "Review the Google AI plan options listed here. Google account eligibility, regional availability, and benefits may change.",
+      "icon": "gem",
+      "plansTitle": "Available options",
+      "notice": {
+        "tone": "info",
+        "title": "Check Google account eligibility",
+        "html": "<p>Google AI plans require an eligible Google account. Contact support with your account email for a check before paying.</p>"
+      },
+      "plans": {
+        "Google AI Pro（Gemini Pro）": {
+          "name": "Google AI Pro (Gemini)",
+          "subtitle": "Monthly option · individual",
+          "desc": "A Google AI Pro listing with access to eligible Gemini features and associated benefits, subject to region and account availability.",
+          "tags": [
+            "Gemini features",
+            "Google account required",
+            "Check region"
+          ],
+          "features": [
+            "Access to eligible Gemini tools and models",
+            "Higher limits depend on the current official plan",
+            "The listing includes Google One storage benefits when eligible",
+            "Confirm account and regional availability before ordering"
+          ],
+          "cta": "View checkout"
+        },
+        "Google AI Pro 年付": {
+          "name": "Google AI Pro · Annual",
+          "subtitle": "Annual option · pay once",
+          "desc": "A 12-month listing. Confirm current eligibility, billing terms, and included benefits before ordering.",
+          "tags": [
+            "12-month option",
+            "Listed annual price",
+            "Confirm eligibility"
+          ],
+          "features": [
+            "12 months of the listed Google AI Pro option",
+            "Included benefits depend on account eligibility",
+            "Check the current annual terms before paying",
+            "Confirm the final quote with support"
+          ],
+          "cta": "View checkout"
+        },
+        "Google AI Ultra": {
+          "name": "Google AI Ultra",
+          "subtitle": "Higher-tier option",
+          "desc": "A higher-tier Google AI listing. Features, usage limits, and storage benefits depend on current Google terms and account eligibility.",
+          "tags": [
+            "Higher limits",
+            "Check Veo access",
+            "Confirm storage terms"
+          ],
+          "features": [
+            "Access to eligible higher-tier AI features",
+            "Video-generation access depends on current availability",
+            "Storage benefits depend on the active Google plan",
+            "Confirm the current terms before ordering"
+          ],
+          "cta": "View checkout"
+        }
+      },
+      "importantNotes": [
+        "Google AI features and regional eligibility can change. Check Google's current plan information.",
+        "Do not change account region or password during activation unless support instructs you to.",
+        "Contact support to confirm the current ordering method."
+      ]
+    },
+    {
+      "slug": "perplexity",
+      "page": "purchase-perplexity.html",
+      "navLabel": "Perplexity",
+      "title": "Perplexity Pro options",
+      "metaTitle": "Perplexity Pro Membership Options | AI Pro Service",
+      "breadcrumb": "Perplexity options",
+      "subtitle": "Review the monthly, annual, and preconfigured-account options shown for Perplexity Pro.",
+      "icon": "lightbulb",
+      "plansTitle": "Available options",
+      "plans": {
+        "Perplexity Pro · 1 个月": {
+          "name": "Perplexity Pro · 1 month",
+          "subtitle": "Monthly option",
+          "desc": "A one-month listing for customers who want to try the service before choosing a longer term.",
+          "tags": [
+            "Monthly",
+            "Flexible",
+            "No password for most options"
+          ],
+          "features": [
+            "Perplexity Pro membership option for one month",
+            "Model access and usage depend on current official terms",
+            "File uploads and research tools depend on availability",
+            "Only provide the account information requested"
+          ],
+          "cta": "View checkout"
+        },
+        "Perplexity Pro · 1 年": {
+          "name": "Perplexity Pro · 1 year",
+          "subtitle": "Annual option",
+          "desc": "A one-year listing. Confirm the final quote and refund terms with support before ordering.",
+          "tags": [
+            "12 months",
+            "Listed annual price",
+            "Confirm terms"
+          ],
+          "features": [
+            "12 months of the listed Pro option",
+            "Access depends on account and current official terms",
+            "Annual listings may have separate refund conditions",
+            "Review the ordering terms before paying"
+          ],
+          "cta": "View checkout"
+        },
+        "Perplexity Pro 成品号": {
+          "name": "Perplexity Pro preconfigured account",
+          "subtitle": "Separate account · ready to use",
+          "desc": "A separate account listed with Pro access. Review account delivery and sign-in conditions before ordering.",
+          "tags": [
+            "Separate account",
+            "Credentials supplied",
+            "No account needed"
+          ],
+          "features": [
+            "Separate account with the listed Pro option",
+            "Credentials supplied for sign-in",
+            "Use a separate account rather than your own email",
+            "Change the password after the first sign-in if applicable"
+          ],
+          "cta": "View checkout"
+        }
+      },
+      "importantNotes": [
+        "Pro benefits and model availability may change. Check Perplexity's current plan details.",
+        "The annual listing may have separate refund terms; review them before ordering.",
+        "Contact support to confirm the current ordering method."
+      ]
+    },
+    {
+      "slug": "grok",
+      "page": "purchase-grok.html",
+      "navLabel": "Grok",
+      "title": "SuperGrok options",
+      "metaTitle": "SuperGrok Membership Options | AI Pro Service",
+      "breadcrumb": "Grok options",
+      "subtitle": "Review the SuperGrok options listed here. X account status and current xAI availability may affect activation.",
+      "icon": "rocket",
+      "plansTitle": "Available options",
+      "plans": {
+        "SuperGrok": {
+          "name": "SuperGrok",
+          "subtitle": "Monthly option · individual",
+          "desc": "A monthly option for eligible Grok features. Exact access and usage limits depend on current xAI terms.",
+          "tags": [
+            "Higher usage",
+            "Image tools",
+            "Check availability"
+          ],
+          "features": [
+            "Access to eligible higher-tier Grok features",
+            "Usage limits and tools may change",
+            "Some features may require an X account",
+            "Confirm account status before ordering"
+          ],
+          "cta": "View checkout"
+        },
+        "SuperGrok Heavy": {
+          "name": "SuperGrok Heavy",
+          "subtitle": "Higher-tier option",
+          "desc": "A higher-tier option for customers who need more access. Confirm the current plan and eligibility before ordering.",
+          "tags": [
+            "Higher usage",
+            "Advanced reasoning",
+            "Confirm terms"
+          ],
+          "features": [
+            "Access depends on current xAI plan benefits",
+            "Availability and usage limits may change",
+            "Some features require an eligible X account",
+            "Contact support to confirm the activation path"
+          ],
+          "cta": "View checkout"
+        },
+        "SuperGrok 成品号": {
+          "name": "SuperGrok preconfigured account",
+          "subtitle": "Separate account · ready to use",
+          "desc": "A separate account listed with SuperGrok access. Review delivery and sign-in conditions before ordering.",
+          "tags": [
+            "Separate account",
+            "Credentials supplied",
+            "No account needed"
+          ],
+          "features": [
+            "Separate account with the listed membership option",
+            "Credentials supplied for sign-in",
+            "Suitable if you do not have an eligible X account",
+            "Change the password after the first sign-in if applicable"
+          ],
+          "cta": "View checkout"
+        }
+      },
+      "importantNotes": [
+        "Some features require an eligible X account. Check account status before ordering.",
+        "Benefits are determined by xAI's current service after activation.",
+        "Contact support to confirm the current ordering method."
+      ]
+    },
+    {
+      "slug": "premium",
+      "page": "purchase-premium.html",
+      "navLabel": "X Premium",
+      "title": "X Premium and Premium+ options",
+      "metaTitle": "X Premium Membership Options | AI Pro Service",
+      "breadcrumb": "X Premium options",
+      "subtitle": "Compare X Premium and Premium+ listings. X account eligibility and included benefits depend on current X terms.",
+      "icon": "x",
+      "plansTitle": "Available options",
+      "plans": {
+        "X Premium": {
+          "name": "X Premium",
+          "subtitle": "Monthly option · standard tier",
+          "desc": "A monthly X Premium listing. Check X's current benefits and eligibility before ordering.",
+          "tags": [
+            "Blue check eligibility",
+            "Editing tools",
+            "Check account status"
+          ],
+          "features": [
+            "Benefits depend on the current X plan",
+            "Some features may vary by account or region",
+            "Blue check decisions are made by X",
+            "Confirm eligibility before ordering"
+          ],
+          "cta": "View checkout"
+        },
+        "X Premium+": {
+          "name": "X Premium+",
+          "subtitle": "Monthly option · higher tier",
+          "desc": "A higher-tier X membership listing. Confirm the benefits and availability that apply to your account.",
+          "tags": [
+            "Higher-tier benefits",
+            "Check ads policy",
+            "Grok access varies"
+          ],
+          "features": [
+            "Benefits depend on current X terms",
+            "Grok limits and availability may vary",
+            "Creator features depend on account eligibility",
+            "Review the current official plan details"
+          ],
+          "cta": "View checkout"
+        },
+        "X Premium+ 年付": {
+          "name": "X Premium+ · Annual",
+          "subtitle": "Annual option",
+          "desc": "A one-year Premium+ listing. Confirm the final quote and renewal terms before ordering.",
+          "tags": [
+            "12 months",
+            "Listed annual price",
+            "Confirm terms"
+          ],
+          "features": [
+            "12 months of the listed Premium+ option",
+            "Benefits depend on current X terms",
+            "Review renewal and refund conditions before paying",
+            "Confirm the final quote with support"
+          ],
+          "cta": "View checkout"
+        }
+      },
+      "importantNotes": [
+        "X determines account eligibility and whether a blue check is displayed.",
+        "Premium+ benefits and Grok access can change by region and account.",
+        "Contact support to confirm the current ordering method."
+      ]
+    }
+  ]
+}

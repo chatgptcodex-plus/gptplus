@@ -200,3 +200,65 @@ body {
   .logo-text .subtitle { display: none; }
   .notice-bar .notice-inner { font-size: 12.5px; padding-right: 40px; }
 }
+
+/* ================= 2026 UI refresh ================= */
+body {
+  font-family: "Avenir Next", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #f5f5ef;
+  color: #35413a;
+}
+.notice-bar { background: #edf1e4; color: #405348; border-bottom: 1px solid #dce5d4; }
+.notice-bar .notice-inner { max-width: 1180px; padding-top: 7px; padding-bottom: 7px; font-size: 12px; }
+.notice-bar svg { color: #557344; }
+.notice-bar .notice-link { color: #17664d; }
+.notice-bar .notice-close { color: #405348; background: rgba(255,255,255,.62); }
+.main-header { background: rgba(250,251,247,.96); border-bottom-color: #e4e8e1; backdrop-filter: blur(14px); }
+.main-header .container { max-width: 1180px; }
+.main-header.scrolled { box-shadow: 0 8px 22px rgba(18,48,33,.07); }
+.logo-container { padding-inline: 0; }
+.logo-container:hover { background: transparent; }
+.logo {
+  color: #183b2b; background: #d6ed75; border-radius: 12px; box-shadow: none;
+  font-family: "Avenir Next", "PingFang SC", sans-serif; letter-spacing: -.04em;
+}
+.logo-text h1 { color: #1c2c23; font-size: 17px; letter-spacing: -.35px; }
+.logo-text .subtitle { color: #7b877d; font-size: 11px; }
+.main-nav ul { gap: 4px; }
+.main-nav ul li a { color: #56645a; font-size: 13px; padding: 9px 10px; border-radius: 8px; }
+.main-nav ul li a svg { color: #839187; }
+.main-nav ul li a:hover { color: #17664d; background: #edf3e8; }
+.main-nav ul li a:hover svg { color: #17664d; }
+.main-nav ul li a.nav-active { color: #17664d; background: #eaf1e4; }
+.main-nav ul li a.nav-active svg { color: #17664d; }
+.main-nav ul.nav-more-list { background: #fbfcf8; border-color: #e3e8df; border-radius: 11px; box-shadow: 0 14px 34px rgba(20,52,36,.13); }
+.main-nav ul.nav-more-list li a:hover { color: #17664d; background: #edf3e8; }
+.user-actions { gap: 8px; margin-left: 8px; }
+.query-btn { color: #405348; border-color: #dbe2d8; background: transparent; padding: 8px 12px; font-size: 13px; }
+.query-btn:hover { color: #17664d; border-color: #9bb9a1; background: #f2f6ed; }
+.mobile-nav-toggle { color: #2c4537; }
+.mobile-nav-toggle:hover { background: #edf3e8; }
+.mobile-nav-menu { background: #fbfcf8; box-shadow: 0 18px 30px rgba(20,52,36,.13); }
+.mobile-nav-menu a { color: #4d5c52; font-size: 14px; }
+.mobile-nav-menu a.nav-active { color: #17664d; background: #edf3e8; }
+.mobile-nav-menu .user-actions-mobile { border-top-color: #e5e9e2; }
+.locale-switch { display: inline-flex; align-items: center; gap: 2px; padding: 4px; border: 1px solid #dbe2d8; border-radius: 999px; background: #fff; }
+.locale-switch a { color: #59675d; padding: 5px 8px; border-radius: 999px; font-size: 12px; font-weight: 700; line-height: 1; }
+.locale-switch a:hover { color: #17664d; background: #edf3e8; }
+.locale-switch a.is-current { color: #173c2c; background: #dcebb0; }
+.user-actions-mobile .locale-switch { display: none; }
+.language-suggestion { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 9px 18px; color: #405348; background: #f3f6ec; border-bottom: 1px solid #e1e8d9; font-size: 12px; }
+.language-suggestion[hidden] { display: none; }
+.language-suggestion-link { color: #17664d; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.language-suggestion-dismiss { width: 24px; height: 24px; border: 0; border-radius: 50%; color: #536257; background: rgba(255,255,255,.65); cursor: pointer; }
+.language-suggestion-dismiss:hover { background: #fff; }
+
+@media (max-width: 520px) {
+  .main-header .container { padding-inline: 17px; }
+  .logo-container { padding: 4px 0; }
+  .logo { width: 36px; height: 36px; margin-right: 9px; border-radius: 10px; }
+  .logo-text h1 { font-size: 16px; }
+  .notice-bar .notice-inner { font-size: 11px; line-height: 1.45; padding-left: 14px; padding-right: 40px; }
+  .header-container > .user-actions > .query-btn { display: none; }
+  .locale-switch a { padding: 5px 7px; font-size: 11px; }
+  .language-suggestion { justify-content: flex-start; padding-inline: 17px; font-size: 11px; }
+}

@@ -1,11 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://chatgptcodex-plus.github.io/gptplus/index.html</loc></url>
-  <url><loc>https://chatgptcodex-plus.github.io/gptplus/purchase-gpt.html</loc></url>
-  <url><loc>https://chatgptcodex-plus.github.io/gptplus/purchase-claude.html</loc></url>
-  <url><loc>https://chatgptcodex-plus.github.io/gptplus/purchase-gemini.html</loc></url>
-  <url><loc>https://chatgptcodex-plus.github.io/gptplus/purchase-perplexity.html</loc></url>
-  <url><loc>https://chatgptcodex-plus.github.io/gptplus/purchase-grok.html</loc></url>
-  <url><loc>https://chatgptcodex-plus.github.io/gptplus/purchase-premium.html</loc></url>
-  <url><loc>https://chatgptcodex-plus.github.io/gptplus/blog/chatgpt-register-guide.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://chatgptcodex-plus.github.io/gptplus/blog/chatgpt-register-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgptcodex-plus.github.io/gptplus/blog/chatgpt-register-guide.html" />
+  </url>
+  <url>
+    <loc>https://chatgptcodex-plus.github.io/gptplus/blog/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgptcodex-plus.github.io/gptplus/blog/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://chatgptcodex-plus.github.io/gptplus/en/blog/index.html" />
+  </url>
+  <url>
+    <loc>https://chatgptcodex-plus.github.io/gptplus/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgptcodex-plus.github.io/gptplus/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://chatgptcodex-plus.github.io/gptplus/en/" />
+  </url>
+  <url>
+    <loc>https://chatgptcodex-plus.github.io/gptplus/purchase-claude.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgptcodex-plus.github.io/gptplus/purchase-claude.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://chatgptcodex-plus.github.io/gptplus/en/purchase-claude.html" />
+  </url>
+  <url>
+    <loc>https://chatgptcodex-plus.github.io/gptplus/purchase-gemini.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgptcodex-plus.github.io/gptplus/purchase-gemini.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://chatgptcodex-plus.github.io/gptplus/en/purchase-gemini.html" />
+  </url>
+  <url>
+    <loc>https://chatgptcodex-plus.github.io/gptplus/purchase-gpt.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgptcodex-plus.github.io/gptplus/purchase-gpt.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://chatgptcodex-plus.github.io/gptplus/en/purchase-gpt.html" />
+  </url>
+  <url>
+    <loc>https://chatgptcodex-plus.github.io/gptplus/purchase-grok.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgptcodex-plus.github.io/gptplus/purchase-grok.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://chatgptcodex-plus.github.io/gptplus/en/purchase-grok.html" />
+  </url>
+  <url>
+    <loc>https://chatgptcodex-plus.github.io/gptplus/purchase-perplexity.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgptcodex-plus.github.io/gptplus/purchase-perplexity.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://chatgptcodex-plus.github.io/gptplus/en/purchase-perplexity.html" />
+  </url>
+  <url>
+    <loc>https://chatgptcodex-plus.github.io/gptplus/purchase-premium.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgptcodex-plus.github.io/gptplus/purchase-premium.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://chatgptcodex-plus.github.io/gptplus/en/purchase-premium.html" />
+  </url>
+  <url>
+    <loc>https://chatgptcodex-plus.github.io/gptplus/en/blog/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgptcodex-plus.github.io/gptplus/blog/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://chatgptcodex-plus.github.io/gptplus/en/blog/index.html" />
+  </url>
+  <url>
+    <loc>https://chatgptcodex-plus.github.io/gptplus/en/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgptcodex-plus.github.io/gptplus/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://chatgptcodex-plus.github.io/gptplus/en/" />
+  </url>
+  <url>
+    <loc>https://chatgptcodex-plus.github.io/gptplus/en/purchase-claude.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgptcodex-plus.github.io/gptplus/purchase-claude.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://chatgptcodex-plus.github.io/gptplus/en/purchase-claude.html" />
+  </url>
+  <url>
+    <loc>https://chatgptcodex-plus.github.io/gptplus/en/purchase-gemini.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgptcodex-plus.github.io/gptplus/purchase-gemini.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://chatgptcodex-plus.github.io/gptplus/en/purchase-gemini.html" />
+  </url>
+  <url>
+    <loc>https://chatgptcodex-plus.github.io/gptplus/en/purchase-gpt.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgptcodex-plus.github.io/gptplus/purchase-gpt.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://chatgptcodex-plus.github.io/gptplus/en/purchase-gpt.html" />
+  </url>
+  <url>
+    <loc>https://chatgptcodex-plus.github.io/gptplus/en/purchase-grok.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgptcodex-plus.github.io/gptplus/purchase-grok.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://chatgptcodex-plus.github.io/gptplus/en/purchase-grok.html" />
+  </url>
+  <url>
+    <loc>https://chatgptcodex-plus.github.io/gptplus/en/purchase-perplexity.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgptcodex-plus.github.io/gptplus/purchase-perplexity.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://chatgptcodex-plus.github.io/gptplus/en/purchase-perplexity.html" />
+  </url>
+  <url>
+    <loc>https://chatgptcodex-plus.github.io/gptplus/en/purchase-premium.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://chatgptcodex-plus.github.io/gptplus/purchase-premium.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://chatgptcodex-plus.github.io/gptplus/en/purchase-premium.html" />
+  </url>
 </urlset>

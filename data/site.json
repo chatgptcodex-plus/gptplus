@@ -2,7 +2,7 @@
   "_readme": "中文业务文案与价格在此；英文文案在 data/site.en.json；文章在 content/articles/zh-CN/ 与 content/articles/en/。改完运行 python3 tools/build.py 重新生成页面。",
 
   "site": {
-    "title": "AI会员代充值服务",
+    "title": "ChatGPT充值代充官网 Claude、Gemini、Grok 与Codex 服务账户购买续费",
     "brandName": "AI饼干科技",
     "tagline": "专业 · 稳定 · 售后无忧",
     "copyright": "© 2025 AI饼干科技. All Rights Reserved.",

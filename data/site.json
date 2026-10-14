@@ -167,10 +167,10 @@
               "subtitle": "个人 Plus",
               "featured": true,
               "badges": ["推荐", "限时特惠", "立减20元"],
-              "price": "179",
+              "price": "140",
               "originalPrice": "189",
               "unit": "/ 月",
-              "save": { "amount": "节省10元", "percent": "约5.3% OFF" },
+              "save": { "amount": "节省49元", "percent": "约25.9% OFF" },
               "desc": "正规官方通道充值，个人版 Plus 一键升级，不成功全额退款。",
               "tags": ["给你充值", "无需账密"],
               "features": [
@@ -228,7 +228,7 @@
           "title": "ChatGPT 产品等级对比",
           "head": ["产品等级", "使用限额", "价格", "适合用户"],
           "rows": [
-            ["ChatGPT Plus", "标准限额", "¥179 / 月", "个人用户，日常使用"],
+            ["ChatGPT Plus", "标准限额", "¥140 / 月", "个人用户，日常使用"],
             ["ChatGPT Pro 5x", "5 倍限额", "¥820 / 月", "重度用户、小团队、开发者"],
             ["ChatGPT Pro 20x", "20 倍限额", "¥1520 / 月", "企业级用户、大规模部署"]
           ]
